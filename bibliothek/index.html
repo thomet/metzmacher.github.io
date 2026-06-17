@@ -84,6 +84,48 @@
         </div>
       </section>
 
+      <section class="section room-content books-section" aria-labelledby="reading-title">
+        <div class="section-heading">
+          <p class="eyebrow">READO</p>
+          <h2 id="reading-title">Gerade aufgeschlagen</h2>
+        </div>
+        <div class="book-grid book-grid-current" data-books-section="current">
+          <article class="placeholder-card book-fallback">
+            <span>Platz im Regal</span>
+            <h3>Aktuelle Lektüre</h3>
+            <p>Hier erscheinen die Bücher, die bei READO gerade als gelesen markiert sind.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section room-content books-section" aria-labelledby="recent-books-title">
+        <div class="section-heading">
+          <p class="eyebrow">Gelesen</p>
+          <h2 id="recent-books-title">Zuletzt ins Regal gestellt</h2>
+        </div>
+        <div class="book-grid" data-books-section="recent">
+          <article class="placeholder-card book-fallback">
+            <span>Platz im Regal</span>
+            <h3>Zuletzt gelesen</h3>
+            <p>Hier landen die zuletzt gelesenen Bücher, sobald die tägliche Aktualisierung Daten findet.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section room-content books-section" aria-labelledby="tbr-books-title">
+        <div class="section-heading">
+          <p class="eyebrow">Stapel</p>
+          <h2 id="tbr-books-title">Noch auf dem Stapel</h2>
+        </div>
+        <div class="book-grid" data-books-section="tbr">
+          <article class="placeholder-card book-fallback">
+            <span>Platz im Regal</span>
+            <h3>Wunschliste und Stapel</h3>
+            <p>Hier ist Platz für Bücher aus Wunschliste und Stapel.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section room-content" aria-labelledby="finds-title">
         <div class="section-heading">
           <p class="eyebrow">Fundstücke</p>
@@ -122,5 +164,6 @@
       <p><a href="mailto:hallo@metzmacher.me">hallo@metzmacher.me</a></p>
       <p>Kein Blog. Kein Feed. Nur ein ruhiger Ort im Web.</p>
     </footer>
+    <script src="/scripts/books.js" defer></script>
   </body>
 </html>

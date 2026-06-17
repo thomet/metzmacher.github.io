@@ -611,6 +611,95 @@ svg {
   gap: var(--space-md);
 }
 
+.books-section .section-heading {
+  margin-bottom: var(--space-md);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.book-grid-current {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.book-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 239, 0.72), rgba(234, 223, 201, 0.34)),
+    var(--color-card);
+  box-shadow: 0 12px 32px rgba(56, 41, 31, 0.055);
+}
+
+.book-cover {
+  display: grid;
+  min-height: 13.5rem;
+  place-items: center;
+  padding: var(--space-md);
+  border-bottom: 1px solid rgba(56, 41, 31, 0.12);
+  background:
+    linear-gradient(135deg, rgba(117, 130, 71, 0.08), transparent 48%),
+    rgba(255, 250, 239, 0.42);
+  text-decoration: none;
+}
+
+.book-cover img {
+  width: min(100%, 8.5rem);
+  max-height: 12rem;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 0 12px 24px rgba(56, 41, 31, 0.16);
+}
+
+.book-cover span {
+  color: var(--color-bronze);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.book-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: var(--space-md);
+}
+
+.book-owner {
+  margin-bottom: var(--space-xs);
+  color: var(--color-bronze);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.book-title {
+  overflow-wrap: anywhere;
+  font-size: 1.25rem;
+}
+
+.book-author {
+  margin-top: auto;
+  color: var(--color-muted);
+}
+
+.book-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: var(--space-md);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .place-card {
   display: grid;
   gap: var(--space-md);
@@ -736,7 +825,9 @@ svg {
   .quiet-list,
   .collection-grid,
   .library-grid,
-  .placeholder-grid {
+  .placeholder-grid,
+  .book-grid,
+  .book-grid-current {
     grid-template-columns: 1fr;
   }
 }

@@ -6,6 +6,9 @@ Die Seite ist bewusst einfach gehalten: kein CMS, kein Build-System, keine Track
 
 - `index.html`
 - `styles.css`
+- `scripts/books.js`
+- `scripts/fetch-reado-books.mjs`
+- `data/books.json`
 - `spielzimmer/index.html`
 - `fernwehzimmer/index.html`
 - `bibliothek/index.html`
@@ -39,6 +42,20 @@ Die Inhalte der drei Räume liegen jeweils in ihren eigenen Dateien:
 - `bibliothek/index.html`
 
 Diese Seiten sind als kuratierte Sammlungen gedacht, nicht als Blog oder Chronologie.
+
+## READO-Daten in der Bibliothek
+
+Die Seite `/bibliothek/` kann öffentliche READO-Daten aus `data/books.json` anzeigen. Die Webseite fragt READO nicht direkt im Browser ab, damit es keine Cross-Origin-Probleme und keine Laufzeit-Abhängigkeit gibt.
+
+Die Datei wird durch dieses Script aktualisiert:
+
+```bash
+node scripts/fetch-reado-books.mjs
+```
+
+Das Script verwendet nur öffentlich erreichbare Profilseiten und öffentliche Buchseiten von READO. Es liest Buch-Links aus dem HTML der Profile und ergänzt Titel, Autor und Cover über die JSON-LD-Daten der öffentlichen Buchseiten. Gibt es keine Daten oder ändert READO seine Seite, bleiben die gestalteten Platzhalter sichtbar.
+
+Eine GitHub Action unter `.github/workflows/update-books.yml` läuft einmal täglich und schreibt die aktualisierte Datei `data/books.json` ins Repository zurück. Sie kann zusätzlich manuell über **Actions → Update READO books → Run workflow** gestartet werden.
 
 ## Platzhalter ersetzen
 
