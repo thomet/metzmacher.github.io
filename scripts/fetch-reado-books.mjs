@@ -24,7 +24,7 @@ const PROFILES = [
     handle: "kahathi",
     profileUrl: "https://reado.app/de/profile/kahathi",
     fetchUrl: "https://reado.app/de/profile/kahathi",
-    tbrLists: ["_wishlist", "_stack"],
+    tbrLists: ["_stack"],
   },
 ];
 
@@ -227,7 +227,6 @@ async function fetchProfile(profile) {
       current: await booksForIds(currentIds.slice(0, 1), profile),
       recent: await booksForIds(recentIds, profile),
       tbr: await booksForIds(tbrIds, profile),
-      availableLists: Object.keys(lists).sort(),
     };
   } catch (error) {
     diagnostics.push(`Profil ${profile.handle} konnte nicht geladen werden: ${error.message}`);
@@ -239,7 +238,6 @@ async function fetchProfile(profile) {
       current: [],
       recent: [],
       tbr: [],
-      availableLists: [],
     };
   }
 }

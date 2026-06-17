@@ -8,7 +8,7 @@
   const fallbackTexts = {
     current: "Hier erscheinen die Bücher, die bei READO gerade als gelesen markiert sind.",
     recent: "Hier landen die zuletzt gelesenen Bücher, sobald die tägliche Aktualisierung Daten findet.",
-    tbr: "Hier ist Platz für Bücher aus Wunschliste und Stapel.",
+    tbr: "Hier ist Platz für ungelesene Bücher, die schon im Regal warten.",
   };
 
   const containers = document.querySelectorAll("[data-books-section]");
