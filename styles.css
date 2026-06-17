@@ -454,33 +454,6 @@ svg {
   font-weight: 700;
 }
 
-.now-section {
-  display: grid;
-  grid-template-columns: minmax(0, 0.75fr) minmax(280px, 1fr);
-  align-items: start;
-  gap: var(--space-xl);
-  border-top: 1px solid var(--color-line);
-}
-
-.now-list {
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--color-line);
-  list-style: none;
-}
-
-.now-list li {
-  padding: var(--space-md) 0;
-  border-bottom: 1px solid var(--color-line);
-  color: var(--color-muted);
-}
-
-.now-list strong {
-  color: var(--color-green);
-}
-
 .room-content {
   border-top: 1px solid var(--color-line);
 }
@@ -805,7 +778,6 @@ svg {
 
   .hero,
   .house-intro,
-  .now-section,
   .about-note {
     grid-template-columns: 1fr;
   }

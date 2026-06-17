@@ -25,15 +25,7 @@ Die Seite ist nicht als Blog gedacht. Es gibt keine Datumslogik, keine Chronolog
 
 ## Inhalte ändern
 
-Die meisten Texte stehen direkt in `index.html`.
-
-Besonders pflegeleicht ist die Sektion **Gerade im Haus**. Suche in `index.html` nach:
-
-```html
-<ul class="now-list">
-```
-
-Dort können die drei Listeneinträge direkt angepasst werden.
+Die Startseite `index.html` ist nur die Eingangshalle: Hero, kurzer Raumgedanke, drei Türen und der Abschnitt darüber, was in diesem Haus wichtig ist. Sie enthält bewusst keine News, keinen Feed und keine doppelten Inhalte aus den Räumen.
 
 Die Inhalte der drei Räume liegen jeweils in ihren eigenen Dateien:
 
