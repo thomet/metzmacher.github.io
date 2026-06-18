@@ -6,10 +6,12 @@ Die Seite ist bewusst einfach gehalten: kein CMS, kein Build-System, keine Track
 
 - `index.html`
 - `styles.css`
+- `scripts/games.js`
 - `scripts/books.js`
 - `scripts/fetch-reado-books.mjs`
 - `scripts/trips.js`
 - `scripts/fetch-lambus-trips.mjs`
+- `data/games.json`
 - `data/books.json`
 - `data/trips.json`
 - `data/trips.generated.json`
@@ -38,6 +40,18 @@ Die Inhalte der drei Räume liegen jeweils in ihren eigenen Dateien:
 - `bibliothek/index.html`
 
 Diese Seiten sind als kuratierte Sammlungen gedacht, nicht als Blog oder Chronologie.
+
+## Spielzimmer und Systeme
+
+Die Seite `/spielzimmer/` zeigt Systeme und Spielwelten, die uns an den Spieltisch holen. Sie ist keine Chronik einzelner Spielabende, keine One-Shot-Sammlung und kein Ort für regelmäßige Spielberichte.
+
+Die Inhalte werden zentral in `data/games.json` gepflegt:
+
+- `favorites`: **Auf unserem Tisch** - wiederkehrende Lieblingssysteme, zu denen wir immer wieder greifen.
+- `collection`: **In unserem Regal** - eine kuratierte Sammlung vorhandener Regelwerke, Welten und Spiele.
+- `wishlist`: **Noch verschlossen** - Systeme und Welten, die irgendwann noch geöffnet werden möchten.
+
+Die Seite enthält passende HTML-Fallbacks. Wenn `data/games.json` nicht geladen werden kann, bleibt das Spielzimmer trotzdem lesbar.
 
 ## Fernwehzimmer und Lambus
 

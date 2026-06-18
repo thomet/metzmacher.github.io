@@ -498,6 +498,53 @@ svg {
   padding: var(--space-lg);
 }
 
+.games-section .quiet-copy {
+  margin-bottom: var(--space-lg);
+}
+
+.game-card {
+  min-height: 11rem;
+}
+
+.game-shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: var(--space-md);
+}
+
+.game-shelf-card {
+  position: relative;
+  min-height: 7.5rem;
+  padding: var(--space-md) var(--space-lg);
+  overflow: hidden;
+}
+
+.game-shelf-card::after {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.85rem;
+  width: 2.5rem;
+  height: 3.2rem;
+  content: "";
+  border: 1px solid rgba(160, 118, 63, 0.22);
+  border-radius: 3px;
+  background:
+    linear-gradient(rgba(117, 130, 71, 0.16), rgba(117, 130, 71, 0.16)) 0.55rem 0.8rem / 1.45rem 1px no-repeat,
+    linear-gradient(rgba(160, 118, 63, 0.14), rgba(160, 118, 63, 0.14)) 0.55rem 1.3rem / 1.1rem 1px no-repeat,
+    rgba(255, 250, 239, 0.42);
+  transform: rotate(1.5deg);
+}
+
+.game-shelf-card h3 {
+  position: relative;
+  z-index: 1;
+  max-width: calc(100% - 2rem);
+}
+
+.game-wish-card {
+  min-height: 11.5rem;
+}
+
 .collection-card h3,
 .placeholder-card h3 {
   position: relative;
@@ -1096,7 +1143,8 @@ svg {
   .book-grid,
   .book-grid-current,
   .kept-shelf-grid,
-  .trip-grid {
+  .trip-grid,
+  .game-shelf-grid {
     grid-template-columns: 1fr;
   }
 }

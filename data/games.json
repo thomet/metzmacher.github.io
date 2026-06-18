@@ -1,0 +1,60 @@
+{
+  "favorites": [
+    {
+      "title": "Cthulhu",
+      "description": "Geheimnisse, Ermittlungen und das Unheimliche."
+    },
+    {
+      "title": "Hexxen 1733",
+      "description": "Monsterjagd, Aberglaube und düstere Abenteuer."
+    },
+    {
+      "title": "Coriolis",
+      "description": "Fernhandel, Raumstationen und Geschichten zwischen den Sternen."
+    }
+  ],
+  "collection": [
+    {
+      "title": "Cthulhu",
+      "description": ""
+    },
+    {
+      "title": "Hexxen 1733",
+      "description": ""
+    },
+    {
+      "title": "Coriolis",
+      "description": ""
+    },
+    {
+      "title": "Vaesen",
+      "description": ""
+    },
+    {
+      "title": "Alien",
+      "description": ""
+    },
+    {
+      "title": "Der Eine Ring",
+      "description": ""
+    },
+    {
+      "title": "Forbidden Lands",
+      "description": ""
+    }
+  ],
+  "wishlist": [
+    {
+      "title": "Pendragon",
+      "description": "Ritter, Legenden und ein langer Schatten über Camelot."
+    },
+    {
+      "title": "Delta Green",
+      "description": "Verschwörungen, Akten und Horror im modernen Gewand."
+    },
+    {
+      "title": "Mothership",
+      "description": "Raumfahrt, Enge und Dinge, die besser draußen bleiben."
+    }
+  ]
+}
