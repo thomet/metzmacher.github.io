@@ -673,6 +673,96 @@ svg {
   font-weight: 700;
 }
 
+.more-shelf {
+  padding-bottom: var(--space-xl);
+}
+
+.more-shelf .quiet-copy {
+  max-width: 44rem;
+}
+
+.shelf-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.shelf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.72rem 0.95rem;
+  border: 1px solid rgba(56, 41, 31, 0.16);
+  border-radius: var(--radius);
+  color: var(--color-green);
+  font-size: 0.94rem;
+  font-weight: 700;
+  text-decoration: none;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 239, 0.66), rgba(234, 223, 201, 0.28)),
+    var(--color-card);
+}
+
+.shelf-link::after {
+  content: "↗";
+  color: var(--color-bronze);
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.shelf-link:hover {
+  border-color: rgba(160, 118, 63, 0.34);
+  background: rgba(255, 250, 239, 0.62);
+}
+
+.kept-books {
+  padding-bottom: var(--space-2xl);
+}
+
+.kept-shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.kept-shelf-card {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 239, 0.68), rgba(234, 223, 201, 0.3)),
+    var(--color-card);
+  box-shadow: 0 10px 30px rgba(56, 41, 31, 0.045);
+}
+
+.kept-shelf-card ul {
+  display: grid;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kept-shelf-card li {
+  position: relative;
+  padding-left: 1.15rem;
+  color: var(--color-muted);
+}
+
+.kept-shelf-card li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.42rem;
+  height: 0.42rem;
+  content: "";
+  border: 1px solid rgba(160, 118, 63, 0.5);
+  border-radius: 50%;
+  background: rgba(160, 118, 63, 0.16);
+}
+
 .place-card {
   display: grid;
   gap: var(--space-md);
@@ -799,7 +889,8 @@ svg {
   .library-grid,
   .placeholder-grid,
   .book-grid,
-  .book-grid-current {
+  .book-grid-current,
+  .kept-shelf-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -35,9 +35,13 @@ Die Inhalte der drei Räume liegen jeweils in ihren eigenen Dateien:
 
 Diese Seiten sind als kuratierte Sammlungen gedacht, nicht als Blog oder Chronologie.
 
-## READO-Daten in der Bibliothek
+## Bibliothek und READO
 
-Die Seite `/bibliothek/` kann öffentliche READO-Daten aus `data/books.json` anzeigen. Die Webseite fragt READO nicht direkt im Browser ab, damit es keine Cross-Origin-Probleme und keine Laufzeit-Abhängigkeit gibt.
+Die Seite `/bibliothek/` ist auf Bücher, Hörbücher, Lesen und READO ausgerichtet. Spiele gehören ins Spielzimmer, Musik wird aktuell nicht auf der Seite abgebildet.
+
+READO zeigt auf der Bibliotheksseite nur einen kleinen Ausschnitt aus aktuellen, zuletzt gelesenen und geplanten Büchern. Die vollständigen Leselisten sind über die externen Reado-Links am Ende des READO-Bereichs erreichbar.
+
+Die Webseite fragt READO nicht direkt im Browser ab, damit es keine Cross-Origin-Probleme und keine Laufzeit-Abhängigkeit gibt. Stattdessen liest sie `data/books.json`.
 
 Die Datei wird durch dieses Script aktualisiert:
 
@@ -48,6 +52,8 @@ node scripts/fetch-reado-books.mjs
 Das Script verwendet nur öffentlich erreichbare Profilseiten und öffentliche Buchseiten von READO. Es liest Buch-Links aus dem HTML der Profile und ergänzt Titel, Autor und Cover über die JSON-LD-Daten der öffentlichen Buchseiten. Gibt es keine Daten oder ändert READO seine Seite, bleiben die gestalteten Platzhalter sichtbar.
 
 Eine GitHub Action unter `.github/workflows/update-books.yml` läuft einmal täglich und schreibt die aktualisierte Datei `data/books.json` ins Repository zurück. Sie kann zusätzlich manuell über **Actions → Update READO books → Run workflow** gestartet werden.
+
+Der einzige bewusst statische Bereich der Bibliothek ist **Bücher, die geblieben sind**. Dort können wenige persönliche Platzhalter oder Empfehlungen gepflegt werden, die READO nicht abbildet: Bedeutung, Erinnerung und Spuren im Regal.
 
 ## Platzhalter ersetzen
 

@@ -34,6 +34,8 @@
     const article = createElement("article", `book-card book-card-${section}`);
     const coverLink = createElement("a", "book-cover");
     coverLink.href = book.url || book.profileUrl || "#";
+    coverLink.target = "_blank";
+    coverLink.rel = "noopener noreferrer";
     coverLink.setAttribute("aria-label", `${book.title || "Buch"} bei READO ansehen`);
 
     if (book.cover) {
@@ -52,6 +54,8 @@
     const author = createElement("p", "book-author", book.author || "Autor noch nicht auslesbar");
     const link = createElement("a", "book-link", "Bei READO ansehen");
     link.href = book.url || book.profileUrl || "#";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
 
     body.append(owner, title, author, link);
     article.append(coverLink, body);
