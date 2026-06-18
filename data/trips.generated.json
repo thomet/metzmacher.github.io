@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-06-18T08:49:52.326Z",
+  "source": "Manual Lambus trip selection enriched with public OpenGraph metadata",
+  "trips": [
+    {
+      "title": "Schweden",
+      "url": "https://journal.lambus.com/U3S97M",
+      "note": "Rote Häuser, weite Wege, Wasser zwischen Bäumen.",
+      "image": "https://cdn.lambus.com/trips/66c1db5841e1d32f4b15abd8/cover_photo/d8cec924-1c4c-58c8-9418-e9e080799005.png",
+      "dateLabel": "14.–28. September 2024",
+      "videoUrl": "https://youtu.be/HNWpRpFG7pU",
+      "description": "",
+      "sourceTitle": ""
+    }
+  ],
+  "diagnostics": []
+}

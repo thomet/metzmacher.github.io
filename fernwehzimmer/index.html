@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Das Fernwehzimmer im Haus Metzmacher: Lieblingsorte, Reiseideen und Orte, an die man gern zurückdenkt."
+      content="Das Fernwehzimmer im Haus Metzmacher: ausgewählte Lieblingsreisen und Orte, die offen bleiben."
     >
     <title>Das Fernwehzimmer | Das Haus Metzmacher</title>
     <link
@@ -54,53 +54,20 @@
         </div>
       </section>
 
-      <section class="section room-content" aria-labelledby="places-title">
+      <section class="section room-content trips-section" aria-labelledby="favorite-trips-title">
         <div class="section-heading">
-          <p class="eyebrow">Lieblingsorte</p>
-          <h2 id="places-title">Orte mit Nachklang</h2>
+          <p class="eyebrow">Reisejournale</p>
+          <h2 id="favorite-trips-title">Lieblingsreisen</h2>
         </div>
-        <div class="collection-grid">
-          <article class="collection-card place-card">
-            <div class="image-placeholder" aria-hidden="true">
-              <span>Bildplatzhalter</span>
-            </div>
-            <h3>Schweden</h3>
-            <p>Rote Häuser, weite Wege, Wasser zwischen Bäumen und dieses leise Wiederkommenwollen.</p>
-          </article>
-          <article class="collection-card place-card">
-            <div class="image-placeholder" aria-hidden="true">
-              <span>Bildplatzhalter</span>
-            </div>
-            <h3>Ostsee</h3>
-            <p>Wind auf Holzstegen, Sand an den Schuhen und Tage, die nach Salz riechen.</p>
-          </article>
-          <article class="collection-card place-card">
-            <div class="image-placeholder" aria-hidden="true">
-              <span>Bildplatzhalter</span>
-            </div>
-            <h3>Leipzig und Umgebung</h3>
-            <p>Nahe Orte, kleine Märkte, vertraute Wege und Entdeckungen vor der eigenen Tür.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section room-content" aria-labelledby="on-the-road-title">
-        <div class="section-heading">
-          <p class="eyebrow">Unterwegs</p>
-          <h2 id="on-the-road-title">Kleine Reiseideen und Notizen</h2>
-        </div>
-        <div class="collection-grid">
-          <article class="collection-card">
-            <h3>Am Wasser</h3>
-            <p>Stege, Häfen, Wind und Wege, auf denen man langsamer wird, ohne es zu planen.</p>
-          </article>
-          <article class="collection-card">
-            <h3>Auf Märkten</h3>
-            <p>Stände, Fundstücke, Gespräche und Dinge, die erst auffallen, wenn man stehen bleibt.</p>
-          </article>
-          <article class="collection-card">
-            <h3>In der Natur</h3>
-            <p>Wälder, Wege, Licht zwischen Bäumen und Pausen, die kein Programm brauchen.</p>
+        <p class="quiet-copy">
+          Nicht als vollständige Chronik, sondern als kleine Auswahl von Reisen, die
+          für uns Bedeutung behalten.
+        </p>
+        <div class="trip-grid" data-trips-list>
+          <article class="placeholder-card trip-fallback">
+            <span>Platz für eine Reise</span>
+            <h3>Eine Reise, die blieb</h3>
+            <p>Hier erscheinen ausgewählte Lambus-Journale, sobald Daten vorhanden sind.</p>
           </article>
         </div>
       </section>
@@ -111,26 +78,24 @@
           <h2 id="return-title">Orte, die offen bleiben</h2>
         </div>
         <p class="quiet-copy">
-          Hier sammeln wir Orte, zu denen ein zweiter Besuch passt: wegen eines Blicks,
-          eines Essens, eines Weges oder einfach wegen des Gefühls.
+          Hier sammeln wir Orte, zu denen wir irgendwann noch möchten: wegen eines
+          Blicks, eines Essens, eines Weges oder einfach wegen des Gefühls.
         </p>
-        <div class="placeholder-grid">
-          <article class="placeholder-card placeholder-card-image">
-            <div class="image-placeholder" aria-hidden="true">
-              <span>Platz für ein Bild</span>
-            </div>
+        <div class="placeholder-grid wish-grid">
+          <article class="placeholder-card wish-card">
+            <span>Idee für später</span>
             <h3>Ein Ort am Wasser</h3>
+            <p>Für Tage mit Wind, weitem Blick und genug Zeit, einfach stehen zu bleiben.</p>
           </article>
-          <article class="placeholder-card placeholder-card-image">
-            <div class="image-placeholder" aria-hidden="true">
-              <span>Platz für ein Bild</span>
-            </div>
+          <article class="placeholder-card wish-card">
+            <span>Idee für später</span>
             <h3>Ein Markt, der blieb</h3>
+            <p>Für Stände, Fundstücke, Gespräche und Dinge, die man nicht gesucht hat.</p>
           </article>
-          <article class="placeholder-card">
-            <span>Platz für eine Notiz</span>
-            <h3>Wiederkommen</h3>
-            <p>Für Orte, die noch nicht fertig erzählt sind.</p>
+          <article class="placeholder-card wish-card">
+            <span>Idee für später</span>
+            <h3>Ein Weg ins Grüne</h3>
+            <p>Für Wälder, Licht zwischen Bäumen und Pausen ohne Programm.</p>
           </article>
         </div>
       </section>
@@ -140,5 +105,6 @@
       <p><a href="mailto:kontakt@metzmacher.me">kontakt@metzmacher.me</a></p>
       <p>Kein Blog. Kein Feed. Nur ein ruhiger Ort im Web.</p>
     </footer>
+    <script src="/scripts/trips.js" defer></script>
   </body>
 </html>

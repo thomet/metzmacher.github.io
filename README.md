@@ -8,7 +8,11 @@ Die Seite ist bewusst einfach gehalten: kein CMS, kein Build-System, keine Track
 - `styles.css`
 - `scripts/books.js`
 - `scripts/fetch-reado-books.mjs`
+- `scripts/trips.js`
+- `scripts/fetch-lambus-trips.mjs`
 - `data/books.json`
+- `data/trips.json`
+- `data/trips.generated.json`
 - `spielzimmer/index.html`
 - `fernwehzimmer/index.html`
 - `bibliothek/index.html`
@@ -34,6 +38,31 @@ Die Inhalte der drei Räume liegen jeweils in ihren eigenen Dateien:
 - `bibliothek/index.html`
 
 Diese Seiten sind als kuratierte Sammlungen gedacht, nicht als Blog oder Chronologie.
+
+## Fernwehzimmer und Lambus
+
+Die Seite `/fernwehzimmer/` besteht aktuell nur aus **Lieblingsreisen** und **Orte, die offen bleiben**. Sie zeigt keine vollständige Reisechronik und keine zusätzlichen Kategorien.
+
+Im Abschnitt **Lieblingsreisen** stehen manuell ausgewählte Lambus-Journale, die für uns Bedeutung haben.
+
+Die Auswahl wird in `data/trips.json` gepflegt:
+
+```json
+[
+  {
+    "title": "Schweden",
+    "url": "https://journal.lambus.com/U3S97M",
+    "note": "Rote Häuser, weite Wege, Wasser zwischen Bäumen.",
+    "videoUrl": "https://youtu.be/HNWpRpFG7pU"
+  }
+]
+```
+
+Optional können pro Reise `fallbackImage` und `videoUrl` ergänzt werden. `videoUrl` wird als dezenter sekundärer Link „▶ Reisevideo“ auf der Reisekarte angezeigt und öffnet einen nativen Dialog mit eingebettetem YouTube-Video. Das iframe wird erst beim Öffnen erzeugt und beim Schließen wieder entfernt. Das Script `scripts/fetch-lambus-trips.mjs` lädt die öffentlichen Lambus-Journal-Seiten, liest nach Möglichkeit OpenGraph-Daten (`og:title`, `og:description`, `og:image`) und nutzt danach die öffentlich vom Lambus-Journal geladene Reisedatenquelle, um ein Coverbild und ein dezentes Von-bis-Datum zu finden. Das Ergebnis wird nach `data/trips.generated.json` geschrieben. Wenn keine Daten verfügbar sind, bleiben die manuellen Werte aus `data/trips.json` erhalten.
+
+Die Webseite fragt Lambus nicht direkt im Browser ab, sondern liest nur die lokale Datei `data/trips.generated.json`. Die GitHub Action unter `.github/workflows/update-trips.yml` wird nicht automatisch ausgeführt; sie kann bei neuen oder geänderten Reisen manuell gestartet werden. Alternativ kann lokal `node scripts/fetch-lambus-trips.mjs` ausgeführt werden.
+
+**Orte, die offen bleiben** ist bewusst statisch und kann selten gepflegt werden. Weitere Fernwehzimmer-Bereiche sollten erst ergänzt werden, wenn dafür echte Inhalte vorhanden sind.
 
 ## Bibliothek und READO
 
