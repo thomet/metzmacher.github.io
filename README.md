@@ -1,57 +1,74 @@
 # Das Haus Metzmacher
 
-Eine kleine statische GitHub-Pages-Webseite für `metzmacher.me`: eine Eingangshalle und drei ruhige Raumseiten.
+Eine kleine statische GitHub-Pages-Webseite für `metzmacher.me`: eine Eingangshalle und vier ruhige Raumseiten.
 
-Die Seite ist bewusst einfach gehalten: kein CMS, kein Build-System, keine Trackingdienste und keine externen Abhängigkeiten. Sie besteht nur aus:
+Die Seite ist bewusst einfach gehalten: kein CMS, kein Build-System, keine Trackingdienste und keine externen Abhängigkeiten. Die Struktur bleibt bewusst überschaubar:
 
-- `index.html`
-- `styles.css`
-- `scripts/games.js`
-- `scripts/books.js`
-- `scripts/fetch-reado-books.mjs`
-- `scripts/trips.js`
-- `scripts/fetch-lambus-trips.mjs`
-- `data/games.json`
-- `data/books.json`
-- `data/trips.json`
-- `data/trips.generated.json`
-- `spielzimmer/index.html`
-- `fernwehzimmer/index.html`
-- `bibliothek/index.html`
-
-## Struktur
-
-Die Startseite `index.html` ist die Eingangshalle des Hauses. Von dort führen drei Türen in die Raumseiten:
-
-- `spielzimmer/index.html`
-- `fernwehzimmer/index.html`
-- `bibliothek/index.html`
-
-Die Seite ist nicht als Blog gedacht. Es gibt keine Datumslogik, keine Chronologie und keine regelmäßige Blogpflege.
+- `index.html` ist die Eingangshalle.
+- `styles.css` enthält die gemeinsame Gestaltung.
+- `kueche/`, `bibliothek/`, `fernwehzimmer/` und `spielzimmer/` enthalten die vier Raumseiten.
+- `kueche/<rezept>/index.html` enthält einzelne Rezeptseiten.
+- `data/` enthält kuratierte oder generierte JSON-Daten für Bücher, Reisen und Spiele.
+- `scripts/` enthält kleine Hilfsskripte zum Laden externer öffentlicher Daten.
+- `.github/workflows/` enthält die optionalen GitHub Actions für automatische oder manuelle Datenaktualisierungen.
+- `CNAME` setzt die GitHub-Pages-Domain.
 
 ## Inhalte ändern
 
-Die Startseite `index.html` ist nur die Eingangshalle: Hero, kurzer Raumgedanke, drei Türen und der Abschnitt darüber, was in diesem Haus wichtig ist. Sie enthält bewusst keine News, keinen Feed und keine doppelten Inhalte aus den Räumen.
+Die Startseite `index.html` ist nur die Eingangshalle: Hero, kurzer Raumgedanke, vier Türen und der Abschnitt darüber, was in diesem Haus wichtig ist. Sie enthält bewusst keine News, keinen Feed und keine doppelten Inhalte aus den Räumen.
 
-Die Inhalte der drei Räume liegen jeweils in ihren eigenen Dateien:
+Die Inhalte der vier Räume liegen jeweils in ihren eigenen Dateien:
 
-- `spielzimmer/index.html`
-- `fernwehzimmer/index.html`
+- `kueche/index.html`
 - `bibliothek/index.html`
+- `fernwehzimmer/index.html`
+- `spielzimmer/index.html`
 
 Diese Seiten sind als kuratierte Sammlungen gedacht, nicht als Blog oder Chronologie.
 
-## Spielzimmer und Systeme
+Die Küche ist ein ruhiger Ort für Lieblingsgerichte und Rezepte, die geblieben sind. Die Übersichtsseite wird direkt in HTML gepflegt. Einzelne Rezeptseiten können zusätzlich als eigene Ordner angelegt werden, zum Beispiel `kueche/koshari/index.html`.
 
-Die Seite `/spielzimmer/` zeigt Systeme und Spielwelten, die uns an den Spieltisch holen. Sie ist keine Chronik einzelner Spielabende, keine One-Shot-Sammlung und kein Ort für regelmäßige Spielberichte.
+Die Reihenfolge in Navigation und Startseite ist:
 
-Die Inhalte werden zentral in `data/games.json` gepflegt:
+- Küche
+- Bibliothek
+- Fernwehzimmer
+- Spielzimmer
 
-- `favorites`: **Auf unserem Tisch** - wiederkehrende Lieblingssysteme, zu denen wir immer wieder greifen.
-- `collection`: **In unserem Regal** - eine kuratierte Sammlung vorhandener Regelwerke, Welten und Spiele.
-- `wishlist`: **Noch verschlossen** - Systeme und Welten, die irgendwann noch geöffnet werden möchten.
+## Küche und Rezepte
 
-Die Seite enthält passende HTML-Fallbacks. Wenn `data/games.json` nicht geladen werden kann, bleibt das Spielzimmer trotzdem lesbar.
+Die Seite `/kueche/` ist der erste Raum in Navigation und Startseite.
+
+Die Küche ist kein Blog und keine Rezeptdatenbank, sondern ein Rezeptheft für Lieblingsgerichte, die bei uns geblieben sind. Die Übersichtsseite hat bewusst nur eine Sektion; Hinweise wie `Großer Topf`, `Ofen` oder `Gut vorzubereiten` werden als kleine Tags direkt an den Rezeptkarten gepflegt.
+
+Neue Rezepte werden an zwei Stellen statisch ergänzt:
+
+- als Karte in `kueche/index.html`
+- als eigene Rezeptseite, zum Beispiel `kueche/koshari/index.html`
+
+Zutaten können auf Rezeptseiten in Gruppen strukturiert werden, etwa für Hauptzutaten, Soße, Topping oder Beilage. Das Muster dafür ist in `kueche/koshari/index.html` angelegt.
+
+Ein Rezept ist erst dann prominent sichtbar, wenn es auf `/kueche/` verlinkt ist. Vorbereitete Rezeptseiten können dadurch existieren, ohne auf der Küchenseite aufzutauchen.
+
+## Bibliothek und READO
+
+Die Seite `/bibliothek/` ist auf Bücher, Hörbücher, Lesen und READO ausgerichtet. Spiele gehören ins Spielzimmer, Musik wird aktuell nicht auf der Seite abgebildet.
+
+READO zeigt auf der Bibliotheksseite nur einen kleinen Ausschnitt aus aktuellen, zuletzt gelesenen und geplanten Büchern. Die vollständigen Leselisten sind über die externen Reado-Links am Ende des READO-Bereichs erreichbar.
+
+Die Webseite fragt READO nicht direkt im Browser ab, damit es keine Cross-Origin-Probleme und keine Laufzeit-Abhängigkeit gibt. Stattdessen liest sie `data/books.json`.
+
+Die Datei wird durch dieses Script aktualisiert:
+
+```bash
+node scripts/fetch-reado-books.mjs
+```
+
+Das Script verwendet nur öffentlich erreichbare Profilseiten und öffentliche Buchseiten von READO. Es liest Buch-Links aus dem HTML der Profile und ergänzt Titel, Autor und Cover über die JSON-LD-Daten der öffentlichen Buchseiten. Gibt es keine Daten oder ändert READO seine Seite, bleiben die gestalteten Platzhalter sichtbar.
+
+Eine GitHub Action unter `.github/workflows/update-books.yml` läuft einmal täglich und schreibt die aktualisierte Datei `data/books.json` ins Repository zurück. Sie kann zusätzlich manuell über **Actions → Update READO books → Run workflow** gestartet werden.
+
+Der einzige bewusst statische Bereich der Bibliothek ist **Bücher, die geblieben sind**. Dort können wenige persönliche Platzhalter oder Empfehlungen gepflegt werden, die READO nicht abbildet: Bedeutung, Erinnerung und Spuren im Regal.
 
 ## Fernwehzimmer und Lambus
 
@@ -78,25 +95,17 @@ Die Webseite fragt Lambus nicht direkt im Browser ab, sondern liest nur die loka
 
 **Orte, die offen bleiben** ist bewusst statisch und kann selten gepflegt werden. Weitere Fernwehzimmer-Bereiche sollten erst ergänzt werden, wenn dafür echte Inhalte vorhanden sind.
 
-## Bibliothek und READO
+## Spielzimmer und Systeme
 
-Die Seite `/bibliothek/` ist auf Bücher, Hörbücher, Lesen und READO ausgerichtet. Spiele gehören ins Spielzimmer, Musik wird aktuell nicht auf der Seite abgebildet.
+Die Seite `/spielzimmer/` zeigt Systeme und Spielwelten, die uns an den Spieltisch holen. Sie ist keine Chronik einzelner Spielabende, keine One-Shot-Sammlung und kein Ort für regelmäßige Spielberichte.
 
-READO zeigt auf der Bibliotheksseite nur einen kleinen Ausschnitt aus aktuellen, zuletzt gelesenen und geplanten Büchern. Die vollständigen Leselisten sind über die externen Reado-Links am Ende des READO-Bereichs erreichbar.
+Die Inhalte werden zentral in `data/games.json` gepflegt:
 
-Die Webseite fragt READO nicht direkt im Browser ab, damit es keine Cross-Origin-Probleme und keine Laufzeit-Abhängigkeit gibt. Stattdessen liest sie `data/books.json`.
+- `favorites`: **Auf unserem Tisch** - wiederkehrende Lieblingssysteme, zu denen wir immer wieder greifen.
+- `collection`: **In unserem Regal** - eine kuratierte Sammlung vorhandener Regelwerke, Welten und Spiele.
+- `wishlist`: **Noch verschlossen** - Systeme und Welten, die irgendwann noch geöffnet werden möchten.
 
-Die Datei wird durch dieses Script aktualisiert:
-
-```bash
-node scripts/fetch-reado-books.mjs
-```
-
-Das Script verwendet nur öffentlich erreichbare Profilseiten und öffentliche Buchseiten von READO. Es liest Buch-Links aus dem HTML der Profile und ergänzt Titel, Autor und Cover über die JSON-LD-Daten der öffentlichen Buchseiten. Gibt es keine Daten oder ändert READO seine Seite, bleiben die gestalteten Platzhalter sichtbar.
-
-Eine GitHub Action unter `.github/workflows/update-books.yml` läuft einmal täglich und schreibt die aktualisierte Datei `data/books.json` ins Repository zurück. Sie kann zusätzlich manuell über **Actions → Update READO books → Run workflow** gestartet werden.
-
-Der einzige bewusst statische Bereich der Bibliothek ist **Bücher, die geblieben sind**. Dort können wenige persönliche Platzhalter oder Empfehlungen gepflegt werden, die READO nicht abbildet: Bedeutung, Erinnerung und Spuren im Regal.
+Die Seite enthält passende HTML-Fallbacks. Wenn `data/games.json` nicht geladen werden kann, bleibt das Spielzimmer trotzdem lesbar.
 
 ## Platzhalter ersetzen
 
