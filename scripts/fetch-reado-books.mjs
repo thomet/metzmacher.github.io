@@ -43,7 +43,7 @@ function stripQuery(pathOrUrl) {
   return normalizePath(pathOrUrl).split("?")[0].split("#")[0];
 }
 
-async function fetchText(url, attempts = 3) {
+async function fetchText(url, attempts = 3, extraHeaders = {}) {
   let lastError;
 
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
@@ -52,6 +52,7 @@ async function fetchText(url, attempts = 3) {
         headers: {
           "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
           "user-agent": "metzmacher.me static pages updater (+https://metzmacher.me)",
+          ...extraHeaders,
         },
       });
 
@@ -109,6 +110,48 @@ function extractProfileLists(html) {
   }
 
   return groups;
+}
+
+function extractProfileUserId(html) {
+  return /(?:[?&]|\\u0026|&amp;)userId=([A-Za-z0-9]+)/.exec(html)?.[1] ?? "";
+}
+
+function extractListBookIds(html) {
+  const ids = [];
+  const bookRe = /\["\$","\$L[^"]+","([^"]+)",\{"href":"\/(?:de\/)?book\//g;
+  let bookMatch;
+
+  while ((bookMatch = bookRe.exec(html))) {
+    ids.push(bookMatch[1]);
+  }
+
+  return unique(ids);
+}
+
+async function fetchListIds(listName, userId) {
+  if (!userId) return [];
+
+  const listPath = `/de/lists/${encodeURIComponent(listName)}`;
+  const listUrl = `${BASE_URL}${listPath}?source=profile&userId=${encodeURIComponent(userId)}&_rsc=metzmacher`;
+  const referer = `${BASE_URL}${listPath}?source=profile&userId=${encodeURIComponent(userId)}`;
+
+  try {
+    const html = await fetchText(listUrl, 3, {
+      "accept": "*/*",
+      "next-url": listPath,
+      "referer": referer,
+      "rsc": "1",
+    });
+
+    const ids = extractListBookIds(html);
+    if (ids.length) return ids;
+
+    diagnostics.push(`Liste ${listName} fuer ${userId} enthielt keine RSC-Buchdaten.`);
+  } catch (error) {
+    diagnostics.push(`Liste ${listName} fuer ${userId} konnte nicht geladen werden: ${error.message}`);
+  }
+
+  return [];
 }
 
 function decodeHtmlEntities(value) {
@@ -215,9 +258,18 @@ async function fetchProfile(profile) {
   try {
     const html = await fetchText(profile.fetchUrl);
     const lists = extractProfileLists(html);
+    const userId = extractProfileUserId(html);
     const currentIds = lists._reading ?? [];
-    const recentIds = (lists._read ?? []).slice(0, MAX_RECENT_PER_PERSON);
-    const tbrIds = profile.tbrLists.flatMap((listName) => lists[listName] ?? []).slice(0, MAX_TBR_PER_PERSON);
+    const readListIds = await fetchListIds("_read", userId);
+    const readIds = readListIds.length ? readListIds : lists._read ?? [];
+    const recentIds = readIds.slice(-MAX_RECENT_PER_PERSON).reverse();
+    const tbrListIds = (
+      await Promise.all(profile.tbrLists.map((listName) => fetchListIds(listName, userId)))
+    ).flat();
+    const fallbackTbrIds = profile.tbrLists.flatMap((listName) => lists[listName] ?? []);
+    const tbrIds = (tbrListIds.length ? tbrListIds : fallbackTbrIds)
+      .slice(-MAX_TBR_PER_PERSON)
+      .reverse();
 
     return {
       key: profile.key,
