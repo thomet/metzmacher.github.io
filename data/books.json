@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T07:37:18.437Z",
+  "generatedAt": "2026-06-25T07:54:50.492Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -123,6 +123,26 @@
       ],
       "recent": [
         {
+          "id": "9780062349866",
+          "title": "Selection 4. The Heir",
+          "author": "Kiera Cass",
+          "cover": "https://cover-cdn.read-o.com/9780062349866?db=l",
+          "url": "https://reado.app/de/book/9780062349866",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783844933482",
+          "title": "Iron Flame – Flammengeküsst (Flammengeküsst-Reihe 2)",
+          "author": "Rebecca Yarros",
+          "cover": "https://cover-cdn.read-o.com/9783844933482?db=v",
+          "url": "https://reado.app/de/book/9783844933482",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
           "id": "9783988670793",
           "title": "Das Wüstenmädchen - Die Gilde der Gepardenführer",
           "author": "Laura Trappmann",
@@ -141,29 +161,19 @@
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
-        },
-        {
-          "id": "9783989420953",
-          "title": "Die Wortweberin - Geheimnisse und Glut",
-          "author": "Elvira Zeißler",
-          "cover": "https://cover-cdn.read-o.com/9783989420953?db=v",
-          "url": "https://reado.app/de/book/9783989420953",
-          "ownerKey": "kathrin",
-          "ownerName": "Kathrin",
-          "profileUrl": "https://reado.app/de/profile/kahathi"
-        },
-        {
-          "id": "9783989420328",
-          "title": "Die Wortweberin - Schall und Schein",
-          "author": "Elvira Zeißler",
-          "cover": "https://cover-cdn.read-o.com/9783989420328?db=v",
-          "url": "https://reado.app/de/book/9783989420328",
-          "ownerKey": "kathrin",
-          "ownerName": "Kathrin",
-          "profileUrl": "https://reado.app/de/profile/kahathi"
         }
       ],
       "tbr": [
+        {
+          "id": "9783945073032",
+          "title": "Zwang",
+          "author": "Farina de Waard",
+          "cover": "https://cover-cdn.read-o.com/9783945073032?db=v",
+          "url": "https://reado.app/de/book/9783945073032",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
         {
           "id": "9783596711888",
           "title": "Emily Wildes Kompendium der verlorenen Geschichten",
@@ -190,16 +200,6 @@
           "author": "Heather Fawcett",
           "cover": "https://cover-cdn.read-o.com/9783596708444?db=v",
           "url": "https://reado.app/de/book/9783596708444",
-          "ownerKey": "kathrin",
-          "ownerName": "Kathrin",
-          "profileUrl": "https://reado.app/de/profile/kahathi"
-        },
-        {
-          "id": "9783473586844",
-          "title": "Geheimnisse des Nil, Band 2 - Where the Library Hides",
-          "author": "Isabel Ibañez",
-          "cover": "https://cover-cdn.read-o.com/9783473586844?db=v",
-          "url": "https://reado.app/de/book/9783473586844",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -242,11 +242,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783988670793",
-        "title": "Das Wüstenmädchen - Die Gilde der Gepardenführer",
-        "author": "Laura Trappmann",
-        "cover": "https://cover-cdn.read-o.com/9783988670793?db=v",
-        "url": "https://reado.app/de/book/9783988670793",
+        "id": "9780062349866",
+        "title": "Selection 4. The Heir",
+        "author": "Kiera Cass",
+        "cover": "https://cover-cdn.read-o.com/9780062349866?db=l",
+        "url": "https://reado.app/de/book/9780062349866",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -262,11 +262,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783989427426",
-        "title": "Die Wortweberin - Frost und Flammen",
-        "author": "Elvira Zeißler",
-        "cover": "https://cover-cdn.read-o.com/9783989427426?db=v",
-        "url": "https://reado.app/de/book/9783989427426",
+        "id": "9783844933482",
+        "title": "Iron Flame – Flammengeküsst (Flammengeküsst-Reihe 2)",
+        "author": "Rebecca Yarros",
+        "cover": "https://cover-cdn.read-o.com/9783844933482?db=v",
+        "url": "https://reado.app/de/book/9783844933482",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -282,11 +282,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783989420953",
-        "title": "Die Wortweberin - Geheimnisse und Glut",
-        "author": "Elvira Zeißler",
-        "cover": "https://cover-cdn.read-o.com/9783989420953?db=v",
-        "url": "https://reado.app/de/book/9783989420953",
+        "id": "9783988670793",
+        "title": "Das Wüstenmädchen - Die Gilde der Gepardenführer",
+        "author": "Laura Trappmann",
+        "cover": "https://cover-cdn.read-o.com/9783988670793?db=v",
+        "url": "https://reado.app/de/book/9783988670793",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -302,11 +302,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783989420328",
-        "title": "Die Wortweberin - Schall und Schein",
+        "id": "9783989427426",
+        "title": "Die Wortweberin - Frost und Flammen",
         "author": "Elvira Zeißler",
-        "cover": "https://cover-cdn.read-o.com/9783989420328?db=v",
-        "url": "https://reado.app/de/book/9783989420328",
+        "cover": "https://cover-cdn.read-o.com/9783989427426?db=v",
+        "url": "https://reado.app/de/book/9783989427426",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -324,11 +324,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783596711888",
-        "title": "Emily Wildes Kompendium der verlorenen Geschichten",
-        "author": "Heather Fawcett",
-        "cover": "https://cover-cdn.read-o.com/9783596711888?db=v",
-        "url": "https://reado.app/de/book/9783596711888",
+        "id": "9783945073032",
+        "title": "Zwang",
+        "author": "Farina de Waard",
+        "cover": "https://cover-cdn.read-o.com/9783945073032?db=v",
+        "url": "https://reado.app/de/book/9783945073032",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -344,11 +344,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783596710041",
-        "title": "Emily Wildes Atlas der Anderswelten",
+        "id": "9783596711888",
+        "title": "Emily Wildes Kompendium der verlorenen Geschichten",
         "author": "Heather Fawcett",
-        "cover": "https://cover-cdn.read-o.com/9783596710041?db=v",
-        "url": "https://reado.app/de/book/9783596710041",
+        "cover": "https://cover-cdn.read-o.com/9783596711888?db=v",
+        "url": "https://reado.app/de/book/9783596711888",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -364,11 +364,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783596708444",
-        "title": "Emily Wildes Enzyklopädie der Feen",
+        "id": "9783596710041",
+        "title": "Emily Wildes Atlas der Anderswelten",
         "author": "Heather Fawcett",
-        "cover": "https://cover-cdn.read-o.com/9783596708444?db=v",
-        "url": "https://reado.app/de/book/9783596708444",
+        "cover": "https://cover-cdn.read-o.com/9783596710041?db=v",
+        "url": "https://reado.app/de/book/9783596710041",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -384,11 +384,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783473586844",
-        "title": "Geheimnisse des Nil, Band 2 - Where the Library Hides",
-        "author": "Isabel Ibañez",
-        "cover": "https://cover-cdn.read-o.com/9783473586844?db=v",
-        "url": "https://reado.app/de/book/9783473586844",
+        "id": "9783596708444",
+        "title": "Emily Wildes Enzyklopädie der Feen",
+        "author": "Heather Fawcett",
+        "cover": "https://cover-cdn.read-o.com/9783596708444?db=v",
+        "url": "https://reado.app/de/book/9783596708444",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
