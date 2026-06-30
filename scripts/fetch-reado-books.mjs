@@ -35,6 +35,10 @@ function unique(items) {
   return [...new Set(items.filter(Boolean))];
 }
 
+function uniqueBookIds(items) {
+  return unique(items).filter((item) => /^[A-Z0-9]{8,17}$/.test(item) && item !== "ISBN");
+}
+
 function normalizePath(path) {
   return path.replaceAll("\\/", "/").replace(/&amp;/g, "&");
 }
@@ -73,6 +77,9 @@ async function fetchText(url, attempts = 3, extraHeaders = {}) {
 }
 
 function extractProfileLists(html) {
+  const flightLists = extractProfileFlightLists(html);
+  if (Object.keys(flightLists).length) return flightLists;
+
   const listMarkers = [];
   const listRe = /(?:href="|href\\":\\")((?:\\\/|\/)de(?:\\\/|\/)lists(?:\\\/|\/)(_[^?"\\]+)[^"\\]*)/g;
   let listMatch;
@@ -112,8 +119,34 @@ function extractProfileLists(html) {
   return groups;
 }
 
+function extractProfileFlightLists(html) {
+  const groups = {};
+  const listRe = /\\?"(_(?:reading|read|stack))\\?"\s*:\s*\[((?:.|\n)*?)\](?=,\\?"_|,\\?"listConfigs|})/g;
+  let listMatch;
+
+  while ((listMatch = listRe.exec(html))) {
+    const listName = listMatch[1];
+    const items = listMatch[2];
+    const ids = [];
+    const isbnRe = /\\?"isbn\\?"\s*:\s*\\?"([^"\\]+)\\?"/g;
+    let isbnMatch;
+
+    while ((isbnMatch = isbnRe.exec(items))) {
+      ids.push(isbnMatch[1]);
+    }
+
+    groups[listName] = uniqueBookIds(ids);
+  }
+
+  return groups;
+}
+
 function extractProfileUserId(html) {
-  return /(?:[?&]|\\u0026|&amp;)userId=([A-Za-z0-9]+)/.exec(html)?.[1] ?? "";
+  return (
+    /(?:[?&]|\\u0026|&amp;)userId=([A-Za-z0-9]+)/.exec(html)?.[1] ??
+    /\\?"userId\\?"\s*:\s*\\?"([A-Za-z0-9]+)\\?"/.exec(html)?.[1] ??
+    ""
+  );
 }
 
 function extractListBookIds(html) {
@@ -125,7 +158,17 @@ function extractListBookIds(html) {
     ids.push(bookMatch[1]);
   }
 
-  return unique(ids);
+  const hrefRe = /\\?"href\\?"\s*:\s*\\?"\/(?:de\/)?book\/(?:[^"\\\/]+\/)*([^"\\\/?]+)(?:[?"\\])/g;
+  while ((bookMatch = hrefRe.exec(html))) {
+    ids.push(bookMatch[1]);
+  }
+
+  const isbnRe = /\\?"isbn\\?"\s*:\s*\\?"([^"\\]+)\\?"/g;
+  while ((bookMatch = isbnRe.exec(html))) {
+    ids.push(bookMatch[1]);
+  }
+
+  return uniqueBookIds(ids);
 }
 
 async function fetchListIds(listName, userId) {
@@ -260,13 +303,12 @@ async function fetchProfile(profile) {
     const lists = extractProfileLists(html);
     const userId = extractProfileUserId(html);
     const currentIds = lists._reading ?? [];
-    const readListIds = await fetchListIds("_read", userId);
-    const readIds = readListIds.length ? readListIds : lists._read ?? [];
+    const readIds = lists._read?.length ? lists._read : await fetchListIds("_read", userId);
     const recentIds = readIds.slice(-MAX_RECENT_PER_PERSON).reverse();
-    const tbrListIds = (
-      await Promise.all(profile.tbrLists.map((listName) => fetchListIds(listName, userId)))
-    ).flat();
     const fallbackTbrIds = profile.tbrLists.flatMap((listName) => lists[listName] ?? []);
+    const tbrListIds = fallbackTbrIds.length
+      ? fallbackTbrIds
+      : (await Promise.all(profile.tbrLists.map((listName) => fetchListIds(listName, userId)))).flat();
     const tbrIds = (tbrListIds.length ? tbrListIds : fallbackTbrIds)
       .slice(-MAX_TBR_PER_PERSON)
       .reverse();
