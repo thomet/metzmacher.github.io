@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { setTimeout as wait } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
@@ -351,6 +351,22 @@ function interleaveByProfile(profiles, listName) {
   return books;
 }
 
+function sectionBookCount(data) {
+  return Object.values(data?.sections ?? {}).reduce((count, books) => {
+    return count + (Array.isArray(books) ? books.length : 0);
+  }, 0);
+}
+
+async function readExistingData() {
+  try {
+    return JSON.parse(await readFile(OUT_FILE, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return null;
+    diagnostics.push(`Bestehende books.json konnte nicht gelesen werden: ${error.message}`);
+    return null;
+  }
+}
+
 async function main() {
   const profiles = [];
 
@@ -369,6 +385,13 @@ async function main() {
     },
     diagnostics,
   };
+
+  const existingData = await readExistingData();
+  if (sectionBookCount(existingData) > 0 && sectionBookCount(data) === 0) {
+    throw new Error(
+      `Refusing to overwrite ${OUT_FILE}: fetched 0 books, existing file still has ${sectionBookCount(existingData)} books.`
+    );
+  }
 
   await mkdir(dirname(OUT_FILE), { recursive: true });
   await writeFile(OUT_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
