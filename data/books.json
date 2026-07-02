@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T08:21:32.941Z",
+  "generatedAt": "2026-07-02T07:44:20.428Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -165,41 +165,41 @@
       ],
       "tbr": [
         {
-          "id": "9783945073032",
-          "title": "Zwang",
-          "author": "Farina de Waard",
-          "cover": "https://cover-cdn.read-o.com/9783945073032?db=v",
-          "url": "https://reado.app/de/book/9783945073032",
+          "id": "9783426518373",
+          "title": "Outlander - Das Schwärmen von tausend Bienen",
+          "author": "Diana Gabaldon",
+          "cover": "https://cover-cdn.read-o.com/9783426518373?db=v",
+          "url": "https://reado.app/de/book/9783426518373",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783596711888",
-          "title": "Emily Wildes Kompendium der verlorenen Geschichten",
-          "author": "Heather Fawcett",
-          "cover": "https://cover-cdn.read-o.com/9783596711888?db=v",
-          "url": "https://reado.app/de/book/9783596711888",
+          "id": "9783426522684",
+          "title": "Outlander - Ein Schatten von Verrat und Liebe",
+          "author": "Diana Gabaldon",
+          "cover": "https://cover-cdn.read-o.com/9783426522684?db=v",
+          "url": "https://reado.app/de/book/9783426522684",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783596710041",
-          "title": "Emily Wildes Atlas der Anderswelten",
-          "author": "Heather Fawcett",
-          "cover": "https://cover-cdn.read-o.com/9783596710041?db=v",
-          "url": "https://reado.app/de/book/9783596710041",
+          "id": "9783426522660",
+          "title": "Outlander - Echo der Hoffnung",
+          "author": "Diana Gabaldon",
+          "cover": "https://cover-cdn.read-o.com/9783426522660?db=v",
+          "url": "https://reado.app/de/book/9783426522660",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783596708444",
-          "title": "Emily Wildes Enzyklopädie der Feen",
-          "author": "Heather Fawcett",
-          "cover": "https://cover-cdn.read-o.com/9783596708444?db=v",
-          "url": "https://reado.app/de/book/9783596708444",
+          "id": "9783426518243",
+          "title": "Outlander - Ein Hauch von Schnee und Asche",
+          "author": "Diana Gabaldon",
+          "cover": "https://cover-cdn.read-o.com/9783426518243?db=v",
+          "url": "https://reado.app/de/book/9783426518243",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -324,11 +324,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783945073032",
-        "title": "Zwang",
-        "author": "Farina de Waard",
-        "cover": "https://cover-cdn.read-o.com/9783945073032?db=v",
-        "url": "https://reado.app/de/book/9783945073032",
+        "id": "9783426518373",
+        "title": "Outlander - Das Schwärmen von tausend Bienen",
+        "author": "Diana Gabaldon",
+        "cover": "https://cover-cdn.read-o.com/9783426518373?db=v",
+        "url": "https://reado.app/de/book/9783426518373",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -344,11 +344,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783596711888",
-        "title": "Emily Wildes Kompendium der verlorenen Geschichten",
-        "author": "Heather Fawcett",
-        "cover": "https://cover-cdn.read-o.com/9783596711888?db=v",
-        "url": "https://reado.app/de/book/9783596711888",
+        "id": "9783426522684",
+        "title": "Outlander - Ein Schatten von Verrat und Liebe",
+        "author": "Diana Gabaldon",
+        "cover": "https://cover-cdn.read-o.com/9783426522684?db=v",
+        "url": "https://reado.app/de/book/9783426522684",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -364,11 +364,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783596710041",
-        "title": "Emily Wildes Atlas der Anderswelten",
-        "author": "Heather Fawcett",
-        "cover": "https://cover-cdn.read-o.com/9783596710041?db=v",
-        "url": "https://reado.app/de/book/9783596710041",
+        "id": "9783426522660",
+        "title": "Outlander - Echo der Hoffnung",
+        "author": "Diana Gabaldon",
+        "cover": "https://cover-cdn.read-o.com/9783426522660?db=v",
+        "url": "https://reado.app/de/book/9783426522660",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -384,11 +384,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783596708444",
-        "title": "Emily Wildes Enzyklopädie der Feen",
-        "author": "Heather Fawcett",
-        "cover": "https://cover-cdn.read-o.com/9783596708444?db=v",
-        "url": "https://reado.app/de/book/9783596708444",
+        "id": "9783426518243",
+        "title": "Outlander - Ein Hauch von Schnee und Asche",
+        "author": "Diana Gabaldon",
+        "cover": "https://cover-cdn.read-o.com/9783426518243?db=v",
+        "url": "https://reado.app/de/book/9783426518243",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
