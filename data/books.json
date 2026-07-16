@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T06:28:06.124Z",
+  "generatedAt": "2026-07-16T06:31:39.643Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -123,41 +123,41 @@
       ],
       "recent": [
         {
-          "id": "9783989424111",
-          "title": "House of Eternity (Luxusausgabe einer aufwühlenden RomantasySaga in dystopischem Setting)",
-          "author": "Marah Woolf",
-          "cover": "https://cover-cdn.read-o.com/9783989424111?db=v",
-          "url": "https://reado.app/de/book/9783989424111",
+          "id": "9783453317512",
+          "title": "Die Phileasson-Saga - Nordwärts",
+          "author": "Bernhard Hennen",
+          "cover": "https://cover-cdn.read-o.com/9783453317512?db=v",
+          "url": "https://reado.app/de/book/9783453317512",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9780062349866",
-          "title": "Selection 4. The Heir",
-          "author": "Kiera Cass",
-          "cover": "https://cover-cdn.read-o.com/9780062349866?db=l",
-          "url": "https://reado.app/de/book/9780062349866",
+          "id": "9783789120022",
+          "title": "Die Tribute von Panem X. Das Lied von Vogel und Schlange",
+          "author": "Suzanne Collins",
+          "cover": "https://cover-cdn.read-o.com/9783789120022?db=v",
+          "url": "https://reado.app/de/book/9783789120022",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783844933482",
-          "title": "Iron Flame – Flammengeküsst (Flammengeküsst-Reihe 2)",
-          "author": "Rebecca Yarros",
-          "cover": "https://cover-cdn.read-o.com/9783844933482?db=v",
-          "url": "https://reado.app/de/book/9783844933482",
+          "id": "9783404160006",
+          "title": "Das verlorene Symbol",
+          "author": "Dan Brown",
+          "cover": "https://cover-cdn.read-o.com/9783404160006?db=v",
+          "url": "https://reado.app/de/book/9783404160006",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783988670793",
-          "title": "Das Wüstenmädchen - Die Gilde der Gepardenführer",
-          "author": "Laura Trappmann",
-          "cover": "https://cover-cdn.read-o.com/9783988670793?db=v",
-          "url": "https://reado.app/de/book/9783988670793",
+          "id": "9783404175031",
+          "title": "Diabolus",
+          "author": "Dan Brown",
+          "cover": "https://cover-cdn.read-o.com/9783404175031?db=v",
+          "url": "https://reado.app/de/book/9783404175031",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -165,41 +165,41 @@
       ],
       "tbr": [
         {
-          "id": "9783426518373",
-          "title": "Outlander - Das Schwärmen von tausend Bienen",
-          "author": "Diana Gabaldon",
-          "cover": "https://cover-cdn.read-o.com/9783426518373?db=v",
-          "url": "https://reado.app/de/book/9783426518373",
+          "id": "B09GW45MM3",
+          "title": "Black Shamrock (SAMMELBAND): Reverse Harem",
+          "author": "Bonnie Sharp",
+          "cover": "https://cover-cdn.read-o.com/B09GW45MM3?db=a",
+          "url": "https://reado.app/de/book/B09GW45MM3",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783426522684",
-          "title": "Outlander - Ein Schatten von Verrat und Liebe",
-          "author": "Diana Gabaldon",
-          "cover": "https://cover-cdn.read-o.com/9783426522684?db=v",
-          "url": "https://reado.app/de/book/9783426522684",
+          "id": "9783966984126",
+          "title": "Betäubter Wille",
+          "author": "Anna Lena Diel",
+          "cover": "https://cover-cdn.read-o.com/9783966984126?db=v",
+          "url": "https://reado.app/de/book/9783966984126",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783426522660",
-          "title": "Outlander - Echo der Hoffnung",
-          "author": "Diana Gabaldon",
-          "cover": "https://cover-cdn.read-o.com/9783426522660?db=v",
-          "url": "https://reado.app/de/book/9783426522660",
+          "id": "9783738090727",
+          "title": "Begnadet - Buch 1-2",
+          "author": "Sophie Lang",
+          "cover": "https://cover-cdn.read-o.com/9783738090727?db=v",
+          "url": "https://reado.app/de/book/9783738090727",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
         },
         {
-          "id": "9783426518243",
-          "title": "Outlander - Ein Hauch von Schnee und Asche",
-          "author": "Diana Gabaldon",
-          "cover": "https://cover-cdn.read-o.com/9783426518243?db=v",
-          "url": "https://reado.app/de/book/9783426518243",
+          "id": "9783750461123",
+          "title": "Akkretion",
+          "author": "R. M. Amerein",
+          "cover": "https://cover-cdn.read-o.com/9783750461123?db=v",
+          "url": "https://reado.app/de/book/9783750461123",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -242,11 +242,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783989424111",
-        "title": "House of Eternity (Luxusausgabe einer aufwühlenden RomantasySaga in dystopischem Setting)",
-        "author": "Marah Woolf",
-        "cover": "https://cover-cdn.read-o.com/9783989424111?db=v",
-        "url": "https://reado.app/de/book/9783989424111",
+        "id": "9783453317512",
+        "title": "Die Phileasson-Saga - Nordwärts",
+        "author": "Bernhard Hennen",
+        "cover": "https://cover-cdn.read-o.com/9783453317512?db=v",
+        "url": "https://reado.app/de/book/9783453317512",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -262,11 +262,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9780062349866",
-        "title": "Selection 4. The Heir",
-        "author": "Kiera Cass",
-        "cover": "https://cover-cdn.read-o.com/9780062349866?db=l",
-        "url": "https://reado.app/de/book/9780062349866",
+        "id": "9783789120022",
+        "title": "Die Tribute von Panem X. Das Lied von Vogel und Schlange",
+        "author": "Suzanne Collins",
+        "cover": "https://cover-cdn.read-o.com/9783789120022?db=v",
+        "url": "https://reado.app/de/book/9783789120022",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -282,11 +282,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783844933482",
-        "title": "Iron Flame – Flammengeküsst (Flammengeküsst-Reihe 2)",
-        "author": "Rebecca Yarros",
-        "cover": "https://cover-cdn.read-o.com/9783844933482?db=v",
-        "url": "https://reado.app/de/book/9783844933482",
+        "id": "9783404160006",
+        "title": "Das verlorene Symbol",
+        "author": "Dan Brown",
+        "cover": "https://cover-cdn.read-o.com/9783404160006?db=v",
+        "url": "https://reado.app/de/book/9783404160006",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -302,11 +302,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783988670793",
-        "title": "Das Wüstenmädchen - Die Gilde der Gepardenführer",
-        "author": "Laura Trappmann",
-        "cover": "https://cover-cdn.read-o.com/9783988670793?db=v",
-        "url": "https://reado.app/de/book/9783988670793",
+        "id": "9783404175031",
+        "title": "Diabolus",
+        "author": "Dan Brown",
+        "cover": "https://cover-cdn.read-o.com/9783404175031?db=v",
+        "url": "https://reado.app/de/book/9783404175031",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -324,11 +324,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783426518373",
-        "title": "Outlander - Das Schwärmen von tausend Bienen",
-        "author": "Diana Gabaldon",
-        "cover": "https://cover-cdn.read-o.com/9783426518373?db=v",
-        "url": "https://reado.app/de/book/9783426518373",
+        "id": "B09GW45MM3",
+        "title": "Black Shamrock (SAMMELBAND): Reverse Harem",
+        "author": "Bonnie Sharp",
+        "cover": "https://cover-cdn.read-o.com/B09GW45MM3?db=a",
+        "url": "https://reado.app/de/book/B09GW45MM3",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -344,11 +344,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783426522684",
-        "title": "Outlander - Ein Schatten von Verrat und Liebe",
-        "author": "Diana Gabaldon",
-        "cover": "https://cover-cdn.read-o.com/9783426522684?db=v",
-        "url": "https://reado.app/de/book/9783426522684",
+        "id": "9783966984126",
+        "title": "Betäubter Wille",
+        "author": "Anna Lena Diel",
+        "cover": "https://cover-cdn.read-o.com/9783966984126?db=v",
+        "url": "https://reado.app/de/book/9783966984126",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -364,11 +364,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783426522660",
-        "title": "Outlander - Echo der Hoffnung",
-        "author": "Diana Gabaldon",
-        "cover": "https://cover-cdn.read-o.com/9783426522660?db=v",
-        "url": "https://reado.app/de/book/9783426522660",
+        "id": "9783738090727",
+        "title": "Begnadet - Buch 1-2",
+        "author": "Sophie Lang",
+        "cover": "https://cover-cdn.read-o.com/9783738090727?db=v",
+        "url": "https://reado.app/de/book/9783738090727",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -384,11 +384,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783426518243",
-        "title": "Outlander - Ein Hauch von Schnee und Asche",
-        "author": "Diana Gabaldon",
-        "cover": "https://cover-cdn.read-o.com/9783426518243?db=v",
-        "url": "https://reado.app/de/book/9783426518243",
+        "id": "9783750461123",
+        "title": "Akkretion",
+        "author": "R. M. Amerein",
+        "cover": "https://cover-cdn.read-o.com/9783750461123?db=v",
+        "url": "https://reado.app/de/book/9783750461123",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
