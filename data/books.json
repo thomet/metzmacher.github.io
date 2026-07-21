@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T07:28:41.437Z",
+  "generatedAt": "2026-07-21T06:41:09.741Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -109,9 +109,102 @@
       "name": "Kathrin",
       "handle": "kahathi",
       "profileUrl": "https://reado.app/de/profile/kahathi",
-      "current": [],
-      "recent": [],
-      "tbr": []
+      "current": [
+        {
+          "id": "9783426518267",
+          "title": "Outlander - Der Ruf der Trommel",
+          "author": "Diana Gabaldon",
+          "cover": "https://cover-cdn.read-o.com/9783426518267?db=v",
+          "url": "https://reado.app/de/book/9783426518267",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        }
+      ],
+      "recent": [
+        {
+          "id": "9783453317512",
+          "title": "Die Phileasson-Saga - Nordwärts",
+          "author": "Bernhard Hennen",
+          "cover": "https://cover-cdn.read-o.com/9783453317512?db=v",
+          "url": "https://reado.app/de/book/9783453317512",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783789120022",
+          "title": "Die Tribute von Panem X. Das Lied von Vogel und Schlange",
+          "author": "Suzanne Collins",
+          "cover": "https://cover-cdn.read-o.com/9783789120022?db=v",
+          "url": "https://reado.app/de/book/9783789120022",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783404160006",
+          "title": "Das verlorene Symbol",
+          "author": "Dan Brown",
+          "cover": "https://cover-cdn.read-o.com/9783404160006?db=v",
+          "url": "https://reado.app/de/book/9783404160006",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783404175031",
+          "title": "Diabolus",
+          "author": "Dan Brown",
+          "cover": "https://cover-cdn.read-o.com/9783404175031?db=v",
+          "url": "https://reado.app/de/book/9783404175031",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        }
+      ],
+      "tbr": [
+        {
+          "id": "B09GW45MM3",
+          "title": "Black Shamrock (SAMMELBAND): Reverse Harem",
+          "author": "Bonnie Sharp",
+          "cover": "https://cover-cdn.read-o.com/B09GW45MM3?db=a",
+          "url": "https://reado.app/de/book/B09GW45MM3",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783966984126",
+          "title": "Betäubter Wille",
+          "author": "Anna Lena Diel",
+          "cover": "https://cover-cdn.read-o.com/9783966984126?db=v",
+          "url": "https://reado.app/de/book/9783966984126",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783738090727",
+          "title": "Begnadet - Buch 1-2",
+          "author": "Sophie Lang",
+          "cover": "https://cover-cdn.read-o.com/9783738090727?db=v",
+          "url": "https://reado.app/de/book/9783738090727",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        },
+        {
+          "id": "9783750461123",
+          "title": "Akkretion",
+          "author": "R. M. Amerein",
+          "cover": "https://cover-cdn.read-o.com/9783750461123?db=v",
+          "url": "https://reado.app/de/book/9783750461123",
+          "ownerKey": "kathrin",
+          "ownerName": "Kathrin",
+          "profileUrl": "https://reado.app/de/profile/kahathi"
+        }
+      ]
     }
   ],
   "sections": {
@@ -125,6 +218,16 @@
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
+      },
+      {
+        "id": "9783426518267",
+        "title": "Outlander - Der Ruf der Trommel",
+        "author": "Diana Gabaldon",
+        "cover": "https://cover-cdn.read-o.com/9783426518267?db=v",
+        "url": "https://reado.app/de/book/9783426518267",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
       }
     ],
     "recent": [
@@ -139,6 +242,16 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
+        "id": "9783453317512",
+        "title": "Die Phileasson-Saga - Nordwärts",
+        "author": "Bernhard Hennen",
+        "cover": "https://cover-cdn.read-o.com/9783453317512?db=v",
+        "url": "https://reado.app/de/book/9783453317512",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
+      },
+      {
         "id": "9789089984913",
         "title": "Das Gehirn in 30 Sekunden",
         "author": "Anil Seth",
@@ -147,6 +260,16 @@
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
+      },
+      {
+        "id": "9783789120022",
+        "title": "Die Tribute von Panem X. Das Lied von Vogel und Schlange",
+        "author": "Suzanne Collins",
+        "cover": "https://cover-cdn.read-o.com/9783789120022?db=v",
+        "url": "https://reado.app/de/book/9783789120022",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
         "id": "9783943141504",
@@ -159,6 +282,16 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
+        "id": "9783404160006",
+        "title": "Das verlorene Symbol",
+        "author": "Dan Brown",
+        "cover": "https://cover-cdn.read-o.com/9783404160006?db=v",
+        "url": "https://reado.app/de/book/9783404160006",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
+      },
+      {
         "id": "9783941436183",
         "title": "Ardeen, Band 8: Verfluchte Wissenschaft",
         "author": "Sigrid Kraft",
@@ -167,6 +300,16 @@
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
+      },
+      {
+        "id": "9783404175031",
+        "title": "Diabolus",
+        "author": "Dan Brown",
+        "cover": "https://cover-cdn.read-o.com/9783404175031?db=v",
+        "url": "https://reado.app/de/book/9783404175031",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
       }
     ],
     "tbr": [
@@ -181,6 +324,16 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
+        "id": "B09GW45MM3",
+        "title": "Black Shamrock (SAMMELBAND): Reverse Harem",
+        "author": "Bonnie Sharp",
+        "cover": "https://cover-cdn.read-o.com/B09GW45MM3?db=a",
+        "url": "https://reado.app/de/book/B09GW45MM3",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
+      },
+      {
         "id": "9783941436503",
         "title": "Ardeen, Band 10: Eryns Insel",
         "author": "Sigrid Kraft",
@@ -189,6 +342,16 @@
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
+      },
+      {
+        "id": "9783966984126",
+        "title": "Betäubter Wille",
+        "author": "Anna Lena Diel",
+        "cover": "https://cover-cdn.read-o.com/9783966984126?db=v",
+        "url": "https://reado.app/de/book/9783966984126",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
         "id": "9783941436213",
@@ -201,6 +364,16 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
+        "id": "9783738090727",
+        "title": "Begnadet - Buch 1-2",
+        "author": "Sophie Lang",
+        "cover": "https://cover-cdn.read-o.com/9783738090727?db=v",
+        "url": "https://reado.app/de/book/9783738090727",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
+      },
+      {
         "id": "9783570166116",
         "title": "Scholomance – Die Goldenen Enklaven",
         "author": "Naomi Novik",
@@ -209,10 +382,18 @@
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
+      },
+      {
+        "id": "9783750461123",
+        "title": "Akkretion",
+        "author": "R. M. Amerein",
+        "cover": "https://cover-cdn.read-o.com/9783750461123?db=v",
+        "url": "https://reado.app/de/book/9783750461123",
+        "ownerKey": "kathrin",
+        "ownerName": "Kathrin",
+        "profileUrl": "https://reado.app/de/profile/kahathi"
       }
     ]
   },
-  "diagnostics": [
-    "Profil kahathi konnte nicht geladen werden: terminated"
-  ]
+  "diagnostics": []
 }
