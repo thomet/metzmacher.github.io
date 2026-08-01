@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T07:13:38.656Z",
+  "generatedAt": "2026-08-01T06:40:10.771Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -111,11 +111,11 @@
       "profileUrl": "https://reado.app/de/profile/kahathi",
       "current": [
         {
-          "id": "9783426518267",
-          "title": "Outlander - Der Ruf der Trommel",
-          "author": "Diana Gabaldon",
-          "cover": "https://cover-cdn.read-o.com/9783426518267?db=v",
-          "url": "https://reado.app/de/book/9783426518267",
+          "id": "9783570164372",
+          "title": "AMANI - Verräterin des Throns",
+          "author": "Alwyn Hamilton",
+          "cover": "https://cover-cdn.read-o.com/9783570164372?db=v",
+          "url": "https://reado.app/de/book/9783570164372",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -220,11 +220,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783426518267",
-        "title": "Outlander - Der Ruf der Trommel",
-        "author": "Diana Gabaldon",
-        "cover": "https://cover-cdn.read-o.com/9783426518267?db=v",
-        "url": "https://reado.app/de/book/9783426518267",
+        "id": "9783570164372",
+        "title": "AMANI - Verräterin des Throns",
+        "author": "Alwyn Hamilton",
+        "cover": "https://cover-cdn.read-o.com/9783570164372?db=v",
+        "url": "https://reado.app/de/book/9783570164372",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
