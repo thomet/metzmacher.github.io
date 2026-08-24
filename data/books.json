@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T04:51:18.816Z",
+  "generatedAt": "2026-08-24T05:01:10.794Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -9,6 +9,18 @@
       "profileUrl": "https://reado.app/profile/thomet",
       "current": [
         {
+          "id": "9783941436213",
+          "title": "Ardeen, Band 9: Orydis Fluch",
+          "author": "Sigrid Kraft",
+          "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
+          "url": "https://reado.app/de/book/9783941436213",
+          "ownerKey": "thomas",
+          "ownerName": "Thomas",
+          "profileUrl": "https://reado.app/profile/thomet"
+        }
+      ],
+      "recent": [
+        {
           "id": "9783943141023",
           "title": "2044 Gesetze der Macht (#2)",
           "author": "Limarå Hèymdai",
@@ -17,9 +29,7 @@
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
-        }
-      ],
-      "recent": [
+        },
         {
           "id": "9788076197817",
           "title": "Toter Schurke (Der Weg eines NPCs Buch #I): LitRPG-serie",
@@ -49,16 +59,6 @@
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
-        },
-        {
-          "id": "9783941436183",
-          "title": "Ardeen, Band 8: Verfluchte Wissenschaft",
-          "author": "Sigrid Kraft",
-          "cover": "https://cover-cdn.read-o.com/9783941436183?db=v",
-          "url": "https://reado.app/de/book/9783941436183",
-          "ownerKey": "thomas",
-          "ownerName": "Thomas",
-          "profileUrl": "https://reado.app/profile/thomet"
         }
       ],
       "tbr": [
@@ -83,21 +83,21 @@
           "profileUrl": "https://reado.app/profile/thomet"
         },
         {
-          "id": "9783941436213",
-          "title": "Ardeen, Band 9: Orydis Fluch",
-          "author": "Sigrid Kraft",
-          "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
-          "url": "https://reado.app/de/book/9783941436213",
-          "ownerKey": "thomas",
-          "ownerName": "Thomas",
-          "profileUrl": "https://reado.app/profile/thomet"
-        },
-        {
           "id": "9783570166116",
           "title": "Scholomance – Die Goldenen Enklaven",
           "author": "Naomi Novik",
           "cover": "https://cover-cdn.read-o.com/9783570166116?db=v",
           "url": "https://reado.app/de/book/9783570166116",
+          "ownerKey": "thomas",
+          "ownerName": "Thomas",
+          "profileUrl": "https://reado.app/profile/thomet"
+        },
+        {
+          "id": "9783570166109",
+          "title": "Scholomance – Der letzte Absolvent",
+          "author": "Naomi Novik",
+          "cover": "https://cover-cdn.read-o.com/9783570166109?db=v",
+          "url": "https://reado.app/de/book/9783570166109",
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
@@ -210,11 +210,11 @@
   "sections": {
     "current": [
       {
-        "id": "9783943141023",
-        "title": "2044 Gesetze der Macht (#2)",
-        "author": "Limarå Hèymdai",
-        "cover": "https://cover-cdn.read-o.com/9783943141023?db=v",
-        "url": "https://reado.app/de/book/9783943141023",
+        "id": "9783941436213",
+        "title": "Ardeen, Band 9: Orydis Fluch",
+        "author": "Sigrid Kraft",
+        "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
+        "url": "https://reado.app/de/book/9783941436213",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -232,11 +232,11 @@
     ],
     "recent": [
       {
-        "id": "9788076197817",
-        "title": "Toter Schurke (Der Weg eines NPCs Buch #I): LitRPG-serie",
-        "author": "Pavel Kornev",
-        "cover": "https://cover-cdn.read-o.com/8076197813?db=a",
-        "url": "https://reado.app/de/book/9788076197817",
+        "id": "9783943141023",
+        "title": "2044 Gesetze der Macht (#2)",
+        "author": "Limarå Hèymdai",
+        "cover": "https://cover-cdn.read-o.com/9783943141023?db=v",
+        "url": "https://reado.app/de/book/9783943141023",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -252,11 +252,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9789089984913",
-        "title": "Das Gehirn in 30 Sekunden",
-        "author": "Anil Seth",
-        "cover": "https://cover-cdn.read-o.com/9789089984913?db=v",
-        "url": "https://reado.app/de/book/9789089984913",
+        "id": "9788076197817",
+        "title": "Toter Schurke (Der Weg eines NPCs Buch #I): LitRPG-serie",
+        "author": "Pavel Kornev",
+        "cover": "https://cover-cdn.read-o.com/8076197813?db=a",
+        "url": "https://reado.app/de/book/9788076197817",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -272,11 +272,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783943141504",
-        "title": "2044 Kalte Gischt (Dystopische Urban Fantasy)",
-        "author": "Limarå Hèymdai",
-        "cover": "https://cover-cdn.read-o.com/9783943141504?db=v",
-        "url": "https://reado.app/de/book/9783943141504",
+        "id": "9789089984913",
+        "title": "Das Gehirn in 30 Sekunden",
+        "author": "Anil Seth",
+        "cover": "https://cover-cdn.read-o.com/9789089984913?db=v",
+        "url": "https://reado.app/de/book/9789089984913",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -292,11 +292,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783941436183",
-        "title": "Ardeen, Band 8: Verfluchte Wissenschaft",
-        "author": "Sigrid Kraft",
-        "cover": "https://cover-cdn.read-o.com/9783941436183?db=v",
-        "url": "https://reado.app/de/book/9783941436183",
+        "id": "9783943141504",
+        "title": "2044 Kalte Gischt (Dystopische Urban Fantasy)",
+        "author": "Limarå Hèymdai",
+        "cover": "https://cover-cdn.read-o.com/9783943141504?db=v",
+        "url": "https://reado.app/de/book/9783943141504",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -354,11 +354,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783941436213",
-        "title": "Ardeen, Band 9: Orydis Fluch",
-        "author": "Sigrid Kraft",
-        "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
-        "url": "https://reado.app/de/book/9783941436213",
+        "id": "9783570166116",
+        "title": "Scholomance – Die Goldenen Enklaven",
+        "author": "Naomi Novik",
+        "cover": "https://cover-cdn.read-o.com/9783570166116?db=v",
+        "url": "https://reado.app/de/book/9783570166116",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -374,11 +374,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783570166116",
-        "title": "Scholomance – Die Goldenen Enklaven",
+        "id": "9783570166109",
+        "title": "Scholomance – Der letzte Absolvent",
         "author": "Naomi Novik",
-        "cover": "https://cover-cdn.read-o.com/9783570166116?db=v",
-        "url": "https://reado.app/de/book/9783570166116",
+        "cover": "https://cover-cdn.read-o.com/9783570166109?db=v",
+        "url": "https://reado.app/de/book/9783570166109",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
