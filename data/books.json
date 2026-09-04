@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T08:56:06.963Z",
+  "generatedAt": "2026-09-04T08:50:51.931Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -111,11 +111,11 @@
       "profileUrl": "https://reado.app/de/profile/kahathi",
       "current": [
         {
-          "id": "9783570164389",
-          "title": "AMANI - Heldin des Morgenrots",
-          "author": "Alwyn Hamilton",
-          "cover": "https://cover-cdn.read-o.com/9783570164389?db=v",
-          "url": "https://reado.app/de/book/9783570164389",
+          "id": "9783866711198",
+          "title": "Creative Writing: Romane und Kurzgeschichten schreiben",
+          "author": "Raymond Carver",
+          "cover": "https://cover-cdn.read-o.com/9783866711198?db=v",
+          "url": "https://reado.app/de/book/9783866711198",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -220,11 +220,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783570164389",
-        "title": "AMANI - Heldin des Morgenrots",
-        "author": "Alwyn Hamilton",
-        "cover": "https://cover-cdn.read-o.com/9783570164389?db=v",
-        "url": "https://reado.app/de/book/9783570164389",
+        "id": "9783866711198",
+        "title": "Creative Writing: Romane und Kurzgeschichten schreiben",
+        "author": "Raymond Carver",
+        "cover": "https://cover-cdn.read-o.com/9783866711198?db=v",
+        "url": "https://reado.app/de/book/9783866711198",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
