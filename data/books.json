@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T08:52:01.220Z",
+  "generatedAt": "2026-09-09T08:58:22.148Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -9,11 +9,11 @@
       "profileUrl": "https://reado.app/profile/thomet",
       "current": [
         {
-          "id": "9783941436213",
-          "title": "Ardeen, Band 9: Orydis Fluch",
-          "author": "Sigrid Kraft",
-          "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
-          "url": "https://reado.app/de/book/9783941436213",
+          "id": "9789089987211",
+          "title": "PSYCHOLOGIE IN 30 SEKUNDEN",
+          "author": "CHRISTIAN JARRETT",
+          "cover": "https://cover-cdn.read-o.com/9789089987211?db=v",
+          "url": "https://reado.app/de/book/9789089987211",
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
@@ -63,16 +63,6 @@
       ],
       "tbr": [
         {
-          "id": "9789089987211",
-          "title": "PSYCHOLOGIE IN 30 SEKUNDEN",
-          "author": "CHRISTIAN JARRETT",
-          "cover": "https://cover-cdn.read-o.com/9789089987211?db=v",
-          "url": "https://reado.app/de/book/9789089987211",
-          "ownerKey": "thomas",
-          "ownerName": "Thomas",
-          "profileUrl": "https://reado.app/profile/thomet"
-        },
-        {
           "id": "9783941436503",
           "title": "Ardeen, Band 10: Eryns Insel",
           "author": "Sigrid Kraft",
@@ -98,6 +88,16 @@
           "author": "Naomi Novik",
           "cover": "https://cover-cdn.read-o.com/9783570166109?db=v",
           "url": "https://reado.app/de/book/9783570166109",
+          "ownerKey": "thomas",
+          "ownerName": "Thomas",
+          "profileUrl": "https://reado.app/profile/thomet"
+        },
+        {
+          "id": "9783570166093",
+          "title": "Scholomance – Tödliche Lektion",
+          "author": "Naomi Novik",
+          "cover": "https://cover-cdn.read-o.com/9783570166093?db=v",
+          "url": "https://reado.app/de/book/9783570166093",
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
@@ -210,11 +210,11 @@
   "sections": {
     "current": [
       {
-        "id": "9783941436213",
-        "title": "Ardeen, Band 9: Orydis Fluch",
-        "author": "Sigrid Kraft",
-        "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
-        "url": "https://reado.app/de/book/9783941436213",
+        "id": "9789089987211",
+        "title": "PSYCHOLOGIE IN 30 SEKUNDEN",
+        "author": "CHRISTIAN JARRETT",
+        "cover": "https://cover-cdn.read-o.com/9789089987211?db=v",
+        "url": "https://reado.app/de/book/9789089987211",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -314,11 +314,11 @@
     ],
     "tbr": [
       {
-        "id": "9789089987211",
-        "title": "PSYCHOLOGIE IN 30 SEKUNDEN",
-        "author": "CHRISTIAN JARRETT",
-        "cover": "https://cover-cdn.read-o.com/9789089987211?db=v",
-        "url": "https://reado.app/de/book/9789089987211",
+        "id": "9783941436503",
+        "title": "Ardeen, Band 10: Eryns Insel",
+        "author": "Sigrid Kraft",
+        "cover": "https://cover-cdn.read-o.com/9783941436503?db=v",
+        "url": "https://reado.app/de/book/9783941436503",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -334,11 +334,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783941436503",
-        "title": "Ardeen, Band 10: Eryns Insel",
-        "author": "Sigrid Kraft",
-        "cover": "https://cover-cdn.read-o.com/9783941436503?db=v",
-        "url": "https://reado.app/de/book/9783941436503",
+        "id": "9783570166116",
+        "title": "Scholomance – Die Goldenen Enklaven",
+        "author": "Naomi Novik",
+        "cover": "https://cover-cdn.read-o.com/9783570166116?db=v",
+        "url": "https://reado.app/de/book/9783570166116",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -354,11 +354,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783570166116",
-        "title": "Scholomance – Die Goldenen Enklaven",
+        "id": "9783570166109",
+        "title": "Scholomance – Der letzte Absolvent",
         "author": "Naomi Novik",
-        "cover": "https://cover-cdn.read-o.com/9783570166116?db=v",
-        "url": "https://reado.app/de/book/9783570166116",
+        "cover": "https://cover-cdn.read-o.com/9783570166109?db=v",
+        "url": "https://reado.app/de/book/9783570166109",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -374,11 +374,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "9783570166109",
-        "title": "Scholomance – Der letzte Absolvent",
+        "id": "9783570166093",
+        "title": "Scholomance – Tödliche Lektion",
         "author": "Naomi Novik",
-        "cover": "https://cover-cdn.read-o.com/9783570166109?db=v",
-        "url": "https://reado.app/de/book/9783570166109",
+        "cover": "https://cover-cdn.read-o.com/9783570166093?db=v",
+        "url": "https://reado.app/de/book/9783570166093",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
