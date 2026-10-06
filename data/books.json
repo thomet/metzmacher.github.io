@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T11:28:12.242Z",
+  "generatedAt": "2026-10-06T11:16:26.992Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -111,11 +111,11 @@
       "profileUrl": "https://reado.app/de/profile/kahathi",
       "current": [
         {
-          "id": "i-am-fury-emily-varga/9783499017094",
+          "id": "tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel/9783522900218",
           "title": "Buch bei READO",
           "author": "",
-          "cover": "https://cover-cdn.read-o.com/i-am-fury-emily-varga%2F9783499017094?cache=default&expires=604800",
-          "url": "https://reado.app/de/book/i-am-fury-emily-varga%2F9783499017094",
+          "cover": "https://cover-cdn.read-o.com/tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel%2F9783522900218?cache=default&expires=604800",
+          "url": "https://reado.app/de/book/tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel%2F9783522900218",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -220,11 +220,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "i-am-fury-emily-varga/9783499017094",
+        "id": "tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel/9783522900218",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/i-am-fury-emily-varga%2F9783499017094?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/i-am-fury-emily-varga%2F9783499017094",
+        "cover": "https://cover-cdn.read-o.com/tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel%2F9783522900218?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel%2F9783522900218",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -405,7 +405,7 @@
     "Buch scholomance-die-goldenen-enklaven-naomi-novik/9783570166116 konnte nicht geladen werden: 404 Not Found",
     "Buch scholomance-der-letzte-absolvent-naomi-novik/9783570166109 konnte nicht geladen werden: 404 Not Found",
     "Buch scholomance-toedliche-lektion-naomi-novik/9783570166093 konnte nicht geladen werden: 404 Not Found",
-    "Buch i-am-fury-emily-varga/9783499017094 konnte nicht geladen werden: 404 Not Found",
+    "Buch tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel/9783522900218 konnte nicht geladen werden: 404 Not Found",
     "Buch die-phileassonsaga-nordwaerts-bernhard-hennen/9783453317512 konnte nicht geladen werden: 404 Not Found",
     "Buch die-tribute-von-panem-x-das-lied-von-vogel-und-schlange-suzanne-collins/9783789120022 konnte nicht geladen werden: 404 Not Found",
     "Buch das-verlorene-symbol-dan-brown/9783404160006 konnte nicht geladen werden: 404 Not Found",
