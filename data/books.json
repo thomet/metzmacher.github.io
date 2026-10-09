@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T11:22:01.982Z",
+  "generatedAt": "2026-10-09T11:19:52.901Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -20,6 +20,16 @@
         }
       ],
       "recent": [
+        {
+          "id": "ardeen-band-9-orydis-fluch-sigrid-kraft/9783941436213",
+          "title": "Buch bei READO",
+          "author": "",
+          "cover": "https://cover-cdn.read-o.com/ardeen-band-9-orydis-fluch-sigrid-kraft%2F9783941436213?cache=default&expires=604800",
+          "url": "https://reado.app/de/book/ardeen-band-9-orydis-fluch-sigrid-kraft%2F9783941436213",
+          "ownerKey": "thomas",
+          "ownerName": "Thomas",
+          "profileUrl": "https://reado.app/profile/thomet"
+        },
         {
           "id": "2044-gesetze-der-macht-2-limara-heymdai/9783943141023",
           "title": "Buch bei READO",
@@ -49,29 +59,9 @@
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
-        },
-        {
-          "id": "2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai/9783943141504",
-          "title": "Buch bei READO",
-          "author": "",
-          "cover": "https://cover-cdn.read-o.com/2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai%2F9783943141504?cache=default&expires=604800",
-          "url": "https://reado.app/de/book/2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai%2F9783943141504",
-          "ownerKey": "thomas",
-          "ownerName": "Thomas",
-          "profileUrl": "https://reado.app/profile/thomet"
         }
       ],
       "tbr": [
-        {
-          "id": "ardeen-band-10-eryns-insel-sigrid-kraft/9783941436503",
-          "title": "Buch bei READO",
-          "author": "",
-          "cover": "https://cover-cdn.read-o.com/ardeen-band-10-eryns-insel-sigrid-kraft%2F9783941436503?cache=default&expires=604800",
-          "url": "https://reado.app/de/book/ardeen-band-10-eryns-insel-sigrid-kraft%2F9783941436503",
-          "ownerKey": "thomas",
-          "ownerName": "Thomas",
-          "profileUrl": "https://reado.app/profile/thomet"
-        },
         {
           "id": "scholomance-die-goldenen-enklaven-naomi-novik/9783570166116",
           "title": "Buch bei READO",
@@ -98,6 +88,16 @@
           "author": "",
           "cover": "https://cover-cdn.read-o.com/scholomance-toedliche-lektion-naomi-novik%2F9783570166093?cache=default&expires=604800",
           "url": "https://reado.app/de/book/scholomance-toedliche-lektion-naomi-novik%2F9783570166093",
+          "ownerKey": "thomas",
+          "ownerName": "Thomas",
+          "profileUrl": "https://reado.app/profile/thomet"
+        },
+        {
+          "id": "aurora-erleuchtet-amie-kaufman/9783733507619",
+          "title": "Buch bei READO",
+          "author": "",
+          "cover": "https://cover-cdn.read-o.com/aurora-erleuchtet-amie-kaufman%2F9783733507619?cache=default&expires=604800",
+          "url": "https://reado.app/de/book/aurora-erleuchtet-amie-kaufman%2F9783733507619",
           "ownerKey": "thomas",
           "ownerName": "Thomas",
           "profileUrl": "https://reado.app/profile/thomet"
@@ -232,11 +232,11 @@
     ],
     "recent": [
       {
-        "id": "2044-gesetze-der-macht-2-limara-heymdai/9783943141023",
+        "id": "ardeen-band-9-orydis-fluch-sigrid-kraft/9783941436213",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/2044-gesetze-der-macht-2-limara-heymdai%2F9783943141023?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/2044-gesetze-der-macht-2-limara-heymdai%2F9783943141023",
+        "cover": "https://cover-cdn.read-o.com/ardeen-band-9-orydis-fluch-sigrid-kraft%2F9783941436213?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/ardeen-band-9-orydis-fluch-sigrid-kraft%2F9783941436213",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -252,11 +252,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev/9788076197817",
+        "id": "2044-gesetze-der-macht-2-limara-heymdai/9783943141023",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev%2F9788076197817?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev%2F9788076197817",
+        "cover": "https://cover-cdn.read-o.com/2044-gesetze-der-macht-2-limara-heymdai%2F9783943141023?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/2044-gesetze-der-macht-2-limara-heymdai%2F9783943141023",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -272,11 +272,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "das-gehirn-in-30-sekunden-anil-seth/9789089984913",
+        "id": "toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev/9788076197817",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/das-gehirn-in-30-sekunden-anil-seth%2F9789089984913?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/das-gehirn-in-30-sekunden-anil-seth%2F9789089984913",
+        "cover": "https://cover-cdn.read-o.com/toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev%2F9788076197817?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev%2F9788076197817",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -292,11 +292,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai/9783943141504",
+        "id": "das-gehirn-in-30-sekunden-anil-seth/9789089984913",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai%2F9783943141504?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai%2F9783943141504",
+        "cover": "https://cover-cdn.read-o.com/das-gehirn-in-30-sekunden-anil-seth%2F9789089984913?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/das-gehirn-in-30-sekunden-anil-seth%2F9789089984913",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -314,11 +314,11 @@
     ],
     "tbr": [
       {
-        "id": "ardeen-band-10-eryns-insel-sigrid-kraft/9783941436503",
+        "id": "scholomance-die-goldenen-enklaven-naomi-novik/9783570166116",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/ardeen-band-10-eryns-insel-sigrid-kraft%2F9783941436503?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/ardeen-band-10-eryns-insel-sigrid-kraft%2F9783941436503",
+        "cover": "https://cover-cdn.read-o.com/scholomance-die-goldenen-enklaven-naomi-novik%2F9783570166116?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/scholomance-die-goldenen-enklaven-naomi-novik%2F9783570166116",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -334,11 +334,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "scholomance-die-goldenen-enklaven-naomi-novik/9783570166116",
+        "id": "scholomance-der-letzte-absolvent-naomi-novik/9783570166109",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/scholomance-die-goldenen-enklaven-naomi-novik%2F9783570166116?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/scholomance-die-goldenen-enklaven-naomi-novik%2F9783570166116",
+        "cover": "https://cover-cdn.read-o.com/scholomance-der-letzte-absolvent-naomi-novik%2F9783570166109?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/scholomance-der-letzte-absolvent-naomi-novik%2F9783570166109",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -354,11 +354,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "scholomance-der-letzte-absolvent-naomi-novik/9783570166109",
+        "id": "scholomance-toedliche-lektion-naomi-novik/9783570166093",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/scholomance-der-letzte-absolvent-naomi-novik%2F9783570166109?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/scholomance-der-letzte-absolvent-naomi-novik%2F9783570166109",
+        "cover": "https://cover-cdn.read-o.com/scholomance-toedliche-lektion-naomi-novik%2F9783570166093?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/scholomance-toedliche-lektion-naomi-novik%2F9783570166093",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -374,11 +374,11 @@
         "profileUrl": "https://reado.app/de/profile/kahathi"
       },
       {
-        "id": "scholomance-toedliche-lektion-naomi-novik/9783570166093",
+        "id": "aurora-erleuchtet-amie-kaufman/9783733507619",
         "title": "Buch bei READO",
         "author": "",
-        "cover": "https://cover-cdn.read-o.com/scholomance-toedliche-lektion-naomi-novik%2F9783570166093?cache=default&expires=604800",
-        "url": "https://reado.app/de/book/scholomance-toedliche-lektion-naomi-novik%2F9783570166093",
+        "cover": "https://cover-cdn.read-o.com/aurora-erleuchtet-amie-kaufman%2F9783733507619?cache=default&expires=604800",
+        "url": "https://reado.app/de/book/aurora-erleuchtet-amie-kaufman%2F9783733507619",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
         "profileUrl": "https://reado.app/profile/thomet"
@@ -397,14 +397,14 @@
   },
   "diagnostics": [
     "Buch psychologie-in-30-sekunden-christian-jarrett/9789089987211 konnte nicht geladen werden: 404 Not Found",
+    "Buch ardeen-band-9-orydis-fluch-sigrid-kraft/9783941436213 konnte nicht geladen werden: 404 Not Found",
     "Buch 2044-gesetze-der-macht-2-limara-heymdai/9783943141023 konnte nicht geladen werden: 404 Not Found",
     "Buch toter-schurke-der-weg-eines-npcs-buch-i-litrpgserie-pavel-kornev/9788076197817 konnte nicht geladen werden: 404 Not Found",
     "Buch das-gehirn-in-30-sekunden-anil-seth/9789089984913 konnte nicht geladen werden: 404 Not Found",
-    "Buch 2044-kalte-gischt-dystopische-urban-fantasy-limara-heymdai/9783943141504 konnte nicht geladen werden: 404 Not Found",
-    "Buch ardeen-band-10-eryns-insel-sigrid-kraft/9783941436503 konnte nicht geladen werden: 404 Not Found",
     "Buch scholomance-die-goldenen-enklaven-naomi-novik/9783570166116 konnte nicht geladen werden: 404 Not Found",
     "Buch scholomance-der-letzte-absolvent-naomi-novik/9783570166109 konnte nicht geladen werden: 404 Not Found",
     "Buch scholomance-toedliche-lektion-naomi-novik/9783570166093 konnte nicht geladen werden: 404 Not Found",
+    "Buch aurora-erleuchtet-amie-kaufman/9783733507619 konnte nicht geladen werden: 404 Not Found",
     "Buch tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel/9783522900218 konnte nicht geladen werden: 404 Not Found",
     "Buch die-phileassonsaga-nordwaerts-bernhard-hennen/9783453317512 konnte nicht geladen werden: 404 Not Found",
     "Buch die-tribute-von-panem-x-das-lied-von-vogel-und-schlange-suzanne-collins/9783789120022 konnte nicht geladen werden: 404 Not Found",
