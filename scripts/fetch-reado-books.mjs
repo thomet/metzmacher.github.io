@@ -3,7 +3,8 @@ import { dirname, join } from "node:path";
 import { setTimeout as wait } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
 
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
+const SCRIPT_FILE = fileURLToPath(import.meta.url);
+const ROOT = dirname(dirname(SCRIPT_FILE));
 const OUT_FILE = join(ROOT, "data", "books.json");
 const BASE_URL = "https://reado.app";
 const MAX_RECENT_PER_PERSON = 4;
@@ -30,13 +31,56 @@ const PROFILES = [
 
 const diagnostics = [];
 const bookCache = new Map();
+const existingBookCache = new Map();
 
 function unique(items) {
   return [...new Set(items.filter(Boolean))];
 }
 
+function canonicalBookId(item) {
+  if (typeof item !== "string") return "";
+
+  let normalized = stripQuery(item).replace(/^\/+|\/+$/g, "");
+  try {
+    normalized = decodeURIComponent(normalized);
+  } catch {
+    // Keep the undecoded value; validation below will reject malformed IDs.
+  }
+
+  const id = normalized.split("/").at(-1) ?? "";
+  return /^[A-Z0-9]{8,17}$/i.test(id) && id.toUpperCase() !== "ISBN" ? id : "";
+}
+
 function uniqueBookIds(items) {
-  return unique(items).filter((item) => /^[A-Z0-9]{8,17}$/.test(item) && item !== "ISBN");
+  return unique(items.map(canonicalBookId));
+}
+
+function normalizeBookReference(item) {
+  const id = canonicalBookId(item);
+  if (!id) return "";
+
+  let normalized = stripQuery(item).replace(/^\/+|\/+$/g, "");
+  try {
+    normalized = decodeURIComponent(normalized);
+  } catch {
+    return id;
+  }
+
+  const segments = normalized.split("/").filter(Boolean);
+  const slug = segments.length > 1 ? segments.at(-2) : "";
+  return slug && /^[\p{L}\p{N}-]+$/u.test(slug) ? `${slug}/${id}` : id;
+}
+
+function uniqueBookReferences(items) {
+  const references = new Map();
+
+  for (const item of items) {
+    const reference = normalizeBookReference(item);
+    const id = canonicalBookId(reference);
+    if (id && !references.has(id)) references.set(id, reference);
+  }
+
+  return [...references.values()];
 }
 
 function normalizePath(path) {
@@ -113,7 +157,7 @@ function extractProfileLists(html) {
   }
 
   for (const marker of Object.keys(groups)) {
-    groups[marker] = unique(groups[marker]);
+    groups[marker] = uniqueBookReferences(groups[marker]);
   }
 
   return groups;
@@ -242,15 +286,24 @@ function authorName(author) {
   return author?.name ?? "";
 }
 
-async function fetchBook(bookId) {
-  if (bookCache.has(bookId)) return bookCache.get(bookId);
+async function fetchBook(bookReference) {
+  const reference = normalizeBookReference(bookReference);
+  const canonicalId = canonicalBookId(reference);
+  if (!canonicalId) {
+    throw new Error(`Ungueltige READO-Buch-ID: ${bookReference}`);
+  }
 
-  const bookUrl = `${BASE_URL}/de/book/${encodeURIComponent(bookId)}`;
+  if (bookCache.has(canonicalId)) return bookCache.get(canonicalId);
+
+  const bookPath = reference.split("/").map(encodeURIComponent).join("/");
+  const bookUrl = `${BASE_URL}/de/book/${bookPath}`;
   const fallback = {
-    id: bookId,
-    title: "Buch bei READO",
-    author: "",
-    cover: `https://cover-cdn.read-o.com/${encodeURIComponent(bookId)}?cache=default&expires=604800`,
+    ...(existingBookCache.get(canonicalId) ?? {
+      title: "Buch bei READO",
+      author: "",
+      cover: `https://cover-cdn.read-o.com/${encodeURIComponent(canonicalId)}?cache=default&expires=604800`,
+    }),
+    id: canonicalId,
     url: bookUrl,
   };
 
@@ -259,24 +312,24 @@ async function fetchBook(bookId) {
     const book = findBookJsonLd(html);
 
     if (!book) {
-      diagnostics.push(`Keine JSON-LD-Buchdaten fuer ${bookId} gefunden.`);
-      bookCache.set(bookId, fallback);
+      diagnostics.push(`Keine JSON-LD-Buchdaten fuer ${canonicalId} gefunden.`);
+      bookCache.set(canonicalId, fallback);
       return fallback;
     }
 
     const enriched = {
-      id: book.isbn || bookId,
+      id: book.isbn || canonicalId,
       title: book.name || fallback.title,
       author: authorName(book.author),
       cover: book.image || fallback.cover,
       url: bookUrl,
     };
 
-    bookCache.set(bookId, enriched);
+    bookCache.set(canonicalId, enriched);
     return enriched;
   } catch (error) {
-    diagnostics.push(`Buch ${bookId} konnte nicht geladen werden: ${error.message}`);
-    bookCache.set(bookId, fallback);
+    diagnostics.push(`Buch ${canonicalId} konnte nicht geladen werden: ${error.message}`);
+    bookCache.set(canonicalId, fallback);
     return fallback;
   }
 }
@@ -357,6 +410,26 @@ function sectionBookCount(data) {
   }, 0);
 }
 
+function invalidBooks(data) {
+  return Object.values(data?.sections ?? {})
+    .flatMap((books) => (Array.isArray(books) ? books : []))
+    .filter((book) => {
+      return !book?.title || book.title === "Buch bei READO" || !book?.cover;
+    });
+}
+
+function seedExistingBookCache(data) {
+  for (const books of Object.values(data?.sections ?? {})) {
+    if (!Array.isArray(books)) continue;
+
+    for (const book of books) {
+      const id = canonicalBookId(book?.id ?? book?.url ?? "");
+      if (!id || !book?.title || book.title === "Buch bei READO" || !book?.cover) continue;
+      existingBookCache.set(id, { ...book, id });
+    }
+  }
+}
+
 async function readExistingData() {
   try {
     return JSON.parse(await readFile(OUT_FILE, "utf8"));
@@ -368,6 +441,8 @@ async function readExistingData() {
 }
 
 async function main() {
+  const existingData = await readExistingData();
+  seedExistingBookCache(existingData);
   const profiles = [];
 
   for (const profile of PROFILES) {
@@ -386,10 +461,16 @@ async function main() {
     diagnostics,
   };
 
-  const existingData = await readExistingData();
   if (sectionBookCount(existingData) > 0 && sectionBookCount(data) === 0) {
     throw new Error(
       `Refusing to overwrite ${OUT_FILE}: fetched 0 books, existing file still has ${sectionBookCount(existingData)} books.`
+    );
+  }
+
+  const invalid = invalidBooks(data);
+  if (invalid.length) {
+    throw new Error(
+      `Refusing to overwrite ${OUT_FILE}: ${invalid.length} fetched books have no valid title or cover.`
     );
   }
 
@@ -402,7 +483,17 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] === SCRIPT_FILE) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
+
+export {
+  canonicalBookId,
+  extractListBookIds,
+  extractProfileLists,
+  invalidBooks,
+  normalizeBookReference,
+};
