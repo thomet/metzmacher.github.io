@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T10:49:37.204Z",
+  "generatedAt": "2026-10-12T11:57:46.477Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -22,9 +22,9 @@
       "recent": [
         {
           "id": "9783941436213",
-          "title": "Ardeen – Band 9: Orydis Fluch",
+          "title": "Ardeen, Band 9: Orydis Fluch",
           "author": "Sigrid Kraft",
-          "cover": "https://cover-cdn.read-o.com/9783941436213?cache=default&expires=604800",
+          "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
           "url": "https://reado.app/de/book/ardeen-band-9-orydis-fluch-sigrid-kraft/9783941436213",
           "ownerKey": "thomas",
           "ownerName": "Thomas",
@@ -95,8 +95,8 @@
         {
           "id": "9783733507619",
           "title": "Aurora erleuchtet",
-          "author": "Amie Kaufman, Jay Kristoff",
-          "cover": "https://cover-cdn.read-o.com/9783733507619?cache=default&expires=604800",
+          "author": "Amie Kaufman",
+          "cover": "https://cover-cdn.read-o.com/9783733507619?db=v",
           "url": "https://reado.app/de/book/aurora-erleuchtet-amie-kaufman/9783733507619",
           "ownerKey": "thomas",
           "ownerName": "Thomas",
@@ -114,7 +114,7 @@
           "id": "9783522900218",
           "title": "Tale of Sun and Night 2: Memories of Stars and Dust",
           "author": "Magdalena Gammel",
-          "cover": "https://cover-cdn.read-o.com/9783522900218?cache=default&expires=604800",
+          "cover": "https://cover-cdn.read-o.com/9783522900218?db=v",
           "url": "https://reado.app/de/book/tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel/9783522900218",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
@@ -223,7 +223,7 @@
         "id": "9783522900218",
         "title": "Tale of Sun and Night 2: Memories of Stars and Dust",
         "author": "Magdalena Gammel",
-        "cover": "https://cover-cdn.read-o.com/9783522900218?cache=default&expires=604800",
+        "cover": "https://cover-cdn.read-o.com/9783522900218?db=v",
         "url": "https://reado.app/de/book/tale-of-sun-and-night-2-memories-of-stars-and-dust-magdalena-gammel/9783522900218",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
@@ -233,9 +233,9 @@
     "recent": [
       {
         "id": "9783941436213",
-        "title": "Ardeen – Band 9: Orydis Fluch",
+        "title": "Ardeen, Band 9: Orydis Fluch",
         "author": "Sigrid Kraft",
-        "cover": "https://cover-cdn.read-o.com/9783941436213?cache=default&expires=604800",
+        "cover": "https://cover-cdn.read-o.com/9783941436213?db=v",
         "url": "https://reado.app/de/book/ardeen-band-9-orydis-fluch-sigrid-kraft/9783941436213",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
@@ -376,8 +376,8 @@
       {
         "id": "9783733507619",
         "title": "Aurora erleuchtet",
-        "author": "Amie Kaufman, Jay Kristoff",
-        "cover": "https://cover-cdn.read-o.com/9783733507619?cache=default&expires=604800",
+        "author": "Amie Kaufman",
+        "cover": "https://cover-cdn.read-o.com/9783733507619?db=v",
         "url": "https://reado.app/de/book/aurora-erleuchtet-amie-kaufman/9783733507619",
         "ownerKey": "thomas",
         "ownerName": "Thomas",
