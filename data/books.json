@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T12:18:44.122Z",
+  "generatedAt": "2026-11-06T12:05:30.388Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -111,11 +111,11 @@
       "profileUrl": "https://reado.app/de/profile/kahathi",
       "current": [
         {
-          "id": "9783426518243",
-          "title": "Outlander - Ein Hauch von Schnee und Asche",
-          "author": "Diana Gabaldon",
-          "cover": "https://cover-cdn.read-o.com/9783426518243?db=v",
-          "url": "https://reado.app/de/book/outlander-ein-hauch-von-schnee-und-asche-diana-gabaldon/9783426518243",
+          "id": "9783969760727",
+          "title": "Copenhagen Cinnamon 1. Delicate",
+          "author": "Stefanie Neeb",
+          "cover": "https://cover-cdn.read-o.com/9783969760727?db=v",
+          "url": "https://reado.app/de/book/copenhagen-cinnamon-1-delicate-stefanie-neeb/9783969760727",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -220,11 +220,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783426518243",
-        "title": "Outlander - Ein Hauch von Schnee und Asche",
-        "author": "Diana Gabaldon",
-        "cover": "https://cover-cdn.read-o.com/9783426518243?db=v",
-        "url": "https://reado.app/de/book/outlander-ein-hauch-von-schnee-und-asche-diana-gabaldon/9783426518243",
+        "id": "9783969760727",
+        "title": "Copenhagen Cinnamon 1. Delicate",
+        "author": "Stefanie Neeb",
+        "cover": "https://cover-cdn.read-o.com/9783969760727?db=v",
+        "url": "https://reado.app/de/book/copenhagen-cinnamon-1-delicate-stefanie-neeb/9783969760727",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
