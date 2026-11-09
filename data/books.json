@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T11:16:05.057Z",
+  "generatedAt": "2026-11-09T12:50:50.190Z",
   "source": "Public READO profile HTML and public book JSON-LD",
   "profiles": [
     {
@@ -111,11 +111,11 @@
       "profileUrl": "https://reado.app/de/profile/kahathi",
       "current": [
         {
-          "id": "9783969760727",
-          "title": "Copenhagen Cinnamon 1. Delicate",
-          "author": "Stefanie Neeb",
-          "cover": "https://cover-cdn.read-o.com/9783969760727?db=v",
-          "url": "https://reado.app/de/book/copenhagen-cinnamon-1-delicate-stefanie-neeb/9783969760727",
+          "id": "9783426522660",
+          "title": "Outlander - Echo der Hoffnung",
+          "author": "Diana Gabaldon",
+          "cover": "https://cover-cdn.read-o.com/9783426522660?db=v",
+          "url": "https://reado.app/de/book/outlander-echo-der-hoffnung-diana-gabaldon/9783426522660",
           "ownerKey": "kathrin",
           "ownerName": "Kathrin",
           "profileUrl": "https://reado.app/de/profile/kahathi"
@@ -220,11 +220,11 @@
         "profileUrl": "https://reado.app/profile/thomet"
       },
       {
-        "id": "9783969760727",
-        "title": "Copenhagen Cinnamon 1. Delicate",
-        "author": "Stefanie Neeb",
-        "cover": "https://cover-cdn.read-o.com/9783969760727?db=v",
-        "url": "https://reado.app/de/book/copenhagen-cinnamon-1-delicate-stefanie-neeb/9783969760727",
+        "id": "9783426522660",
+        "title": "Outlander - Echo der Hoffnung",
+        "author": "Diana Gabaldon",
+        "cover": "https://cover-cdn.read-o.com/9783426522660?db=v",
+        "url": "https://reado.app/de/book/outlander-echo-der-hoffnung-diana-gabaldon/9783426522660",
         "ownerKey": "kathrin",
         "ownerName": "Kathrin",
         "profileUrl": "https://reado.app/de/profile/kahathi"
